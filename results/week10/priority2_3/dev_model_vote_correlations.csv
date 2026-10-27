@@ -1,0 +1,3 @@
+﻿model,n_dev,spearman_rho_score_vs_votes,spearman_p_value_descriptive_only,note
+LogisticRegression,1554,0.09287775947434013,0.0002460880305059107,Descriptive only; rows may be dependent within documents and MT systems.
+LinearSVM,1554,0.10465754420454917,3.5693620637523584e-05,Descriptive only; rows may be dependent within documents and MT systems.

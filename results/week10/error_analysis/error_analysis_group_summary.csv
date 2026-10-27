@@ -1,0 +1,7 @@
+analysis_group,n,critical_count
+Critical_found_only_by_LogReg,32,32
+FN_LogReg_heuristic_finds,31,31
+FN_both_miss,80,80
+FP_Heuristic_top20,179,0
+FP_LogReg_top20,264,0
+Other,989,19

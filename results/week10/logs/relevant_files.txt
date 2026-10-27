@@ -1,0 +1,7 @@
+D:\Translation Quality Estimation\check_data.py
+D:\Translation Quality Estimation\inspect_mqm.py
+D:\Translation Quality Estimation\mqm_newstest2020_ende.tsv
+D:\Translation Quality Estimation\results\check_segments.log
+D:\Translation Quality Estimation\results\week10\file_inventory.csv
+D:\Translation Quality Estimation\results\week10\logs\project_audit.log
+D:\Translation Quality Estimation\results\week10\logs\relevant_files.txt

@@ -1,0 +1,11 @@
+2026-10-26 08:45:04,564 | INFO | Reading dataset: D:\Translation Quality Estimation\mqm_newstest2020_ende.tsv
+2026-10-26 08:45:05,696 | INFO | Dataset shape: (79020, 9)
+2026-10-26 08:45:05,700 | INFO | Unique docs: 130
+2026-10-26 08:45:05,701 | INFO | Unique doc_ids: 26
+2026-10-26 08:45:05,704 | INFO | Unique systems: 10
+2026-10-26 08:45:05,706 | INFO | Unique raters: 6
+2026-10-26 08:45:05,807 | INFO | Exact duplicate rows: 0
+2026-10-26 08:45:05,807 | INFO | Unique segments by candidate key: 14180
+2026-10-26 08:45:05,808 | INFO | Segments with inconsistent source/target: 12387
+2026-10-26 08:45:05,809 | INFO | Segments with multiple rows per segment-rater: 17708
+2026-10-26 08:45:05,809 | INFO | Completed successfully. Output: D:\Translation Quality Estimation\results\week10\data_quality

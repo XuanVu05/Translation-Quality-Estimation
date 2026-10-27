@@ -1,0 +1,4 @@
+system,doc,doc_id,seg_id,rater,source,target,category,severity
+Online-A.1574,sky.com.20669,7,1161,rater2,We are carrying out a number of enquiries to try to identify those responsible.,"<v>""</v>Wir führen eine Reihe von Untersuchungen durch, um die Verantwortlichen zu identifizieren.",Fluency/Punctuation,Minor
+Online-A.1574,sky.com.20669,7,1161,rater2,We are carrying out a number of enquiries to try to identify those responsible.,"""Wir führen eine Reihe von Untersuchungen durch, um die Verantwortlichen zu identifizieren<v>.</v>",Fluency/Punctuation,Minor
+Online-A.1574,sky.com.20669,7,1161,rater6,We are carrying out a number of enquiries to try to identify those responsible.,"""Wir führen eine Reihe von Untersuchungen durch, um die Verantwortlichen zu identifizieren<v>.</v>",Fluency/Punctuation,Minor

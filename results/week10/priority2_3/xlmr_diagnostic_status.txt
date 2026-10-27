@@ -1,0 +1,1 @@
+SKIPPED: No saved XLM-R Hugging Face checkpoint found in the standard locations. Set XLMR_MODEL_DIR near the top of week10_priority2_3.py to the actual checkpoint path. Do not claim a fresh XLM-R diagnostic was run.

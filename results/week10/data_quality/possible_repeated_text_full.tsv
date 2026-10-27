@@ -1,0 +1,127 @@
+system	doc	doc_id	seg_id	rater	category	severity	repeat_match
+Human-P.0	reuters.276709	1	41	rater3	Accuracy/Addition	Minor	Zum Auftun neuer Geschäftsfelder setzt HSBC das firmeneigene Werkzeug
+Human-P.0	en.ndtv.com.12997	2	79	rater4	No-error	no-error	Lediglich ausländischen Arbeitnehmern, deren Familienmitgliedern sowie Wallfahrern
+Human-B.0	brisbanetimes.com.au.225990	2	140	rater4	Fluency/Grammar	Minor	Es passierte im
+Human-B.0	brisbanetimes.com.au.225990	2	140	rater4	Fluency/Grammar	Minor	Es passierte im
+Human-B.0	brisbanetimes.com.au.225990	2	140	rater4	Accuracy/Addition	Minor	Es passierte im
+Human-P.0	brisbanetimes.com.au.225990	4	142	rater4	Fluency/Grammar	Minor	In einem Wohngebäude
+eTranslation.737	brisbanetimes.com.au.225990	8	146	rater4	Accuracy/Mistranslation	Minor	Als sie flehte: „Stopp, Stop, Stop
+eTranslation.737	brisbanetimes.com.au.225990	8	146	rater4	Accuracy/Mistranslation	Major	Als sie flehte: „Stopp, Stop, Stop
+eTranslation.737	brisbanetimes.com.au.225990	8	146	rater4	Accuracy/Mistranslation	Neutral	Als sie flehte: „Stopp, Stop, Stop
+Online-A.1574	brisbanetimes.com.au.225990	8	146	rater4	Accuracy/Untranslated text	Major	"""Als sie flehte: """"Halt, halt, halt"""
+Online-A.1574	brisbanetimes.com.au.225990	8	146	rater4	Accuracy/Mistranslation	Major	"""Als sie flehte: """"Halt, halt, halt"""
+Human-B.0	brisbanetimes.com.au.225990	10	148	rater4	Fluency/Grammar	Minor	In der rechten Hand hält
+Human-B.0	brisbanetimes.com.au.225990	10	148	rater4	Fluency/Grammar	Minor	In der rechten Hand hält
+Human-B.0	brisbanetimes.com.au.225990	10	148	rater4	Fluency/Grammar	Minor	In der rechten Hand hält
+eTranslation.737	cnbc.com.33999	5	177	rater4	Terminology/Inappropriate for context	Neutral	Da Trump sowohl
+eTranslation.737	cnbc.com.33999	5	177	rater4	Accuracy/Mistranslation	Major	Da Trump sowohl
+eTranslation.737	cnbc.com.33999	5	177	rater4	Accuracy/Mistranslation	Minor	Da Trump sowohl
+eTranslation.737	cnbc.com.33999	5	177	rater4	Accuracy/Mistranslation	Minor	Da Trump sowohl
+Human-P.0	cnbc.com.33999	7	179	rater4	Accuracy/Mistranslation	Minor	In politischer Hinsicht unter Druck stehen durch den Entscheid für den Notstand
+Online-A.1574	cnbc.com.33995	1	188	rater1	Fluency/Grammar	Minor	Öl fällt, nachdem Iran behauptet, dass die USA angeboten haben, Die
+Online-A.1574	cnbc.com.33995	1	188	rater4	Fluency/Grammar	Major	Öl fällt, nachdem Iran behauptet, dass die USA angeboten haben, Die
+Online-A.1574	cnbc.com.33995	1	188	rater4	Fluency/Punctuation	Minor	Öl fällt, nachdem Iran behauptet, dass die USA angeboten haben, Die
+Huoshan_Translate.832	aj-english.8643	4	204	rater5	Fluency/Punctuation	Minor	Die Angst vor Repressalien
+Huoshan_Translate.832	aj-english.8643	4	204	rater5	Fluency/Punctuation	Minor	Die Angst vor Repressalien
+Online-A.1574	aj-english.8643	4	204	rater5	Fluency/Punctuation	Minor	Die Angst vor Repressalien
+Online-A.1574	aj-english.8643	4	204	rater5	Fluency/Punctuation	Minor	Die Angst vor Repressalien
+Online-B.1590	aj-english.8643	4	204	rater5	Fluency/Punctuation	Minor	Die Angst vor Repressalien
+Online-B.1590	aj-english.8643	4	204	rater5	Fluency/Punctuation	Minor	Die Angst vor Repressalien
+OPPO.1535	aj-english.8643	4	204	rater5	Fluency/Punctuation	Minor	Die Angst vor Repressalien
+OPPO.1535	aj-english.8643	4	204	rater5	Fluency/Punctuation	Minor	Die Angst vor Repressalien
+Tencent_Translation.1520	aj-english.8643	4	204	rater5	Fluency/Punctuation	Minor	Die Angst vor Repressalien
+Tencent_Translation.1520	aj-english.8643	4	204	rater5	Fluency/Punctuation	Minor	Die Angst vor Repressalien
+Tohoku-AIP-NTT.890	aj-english.8643	4	204	rater5	Fluency/Punctuation	Minor	Die Angst vor Repressalien
+Tohoku-AIP-NTT.890	aj-english.8643	4	204	rater5	Fluency/Punctuation	Minor	Die Angst vor Repressalien
+eTranslation.737	upi.205650	1	255	rater2	Fluency/Spelling	Minor	North Carolina Mann
+Huoshan_Translate.832	upi.205650	1	255	rater2	Fluency/Spelling	Minor	North Carolina Mann
+Online-A.1574	upi.205650	1	255	rater2	Fluency/Spelling	Minor	North Carolina Mann
+OPPO.1535	upi.205650	1	255	rater2	Terminology/Inappropriate for context	Minor	North Carolina Mann
+Tohoku-AIP-NTT.890	upi.205650	1	255	rater2	Fluency/Spelling	Minor	North Carolina Mann
+Huoshan_Translate.832	thesun.co.uk.27377	22	282	rater5	Accuracy/Mistranslation	Major	Das Paar sind
+Online-A.1574	thesun.co.uk.27377	22	282	rater5	Fluency/Grammar	Minor	Das Paar sind
+OPPO.1535	thesun.co.uk.27377	22	282	rater5	Accuracy/Mistranslation	Major	Das Paar sind
+Human-P.0	latimes.431856	3	289	rater4	Style/Awkward	Major	Die schriftliche Stellungnahme der Klinik lautete:
+Human-P.0	latimes.431856	3	289	rater4	Style/Awkward	Minor	Die schriftliche Stellungnahme der Klinik lautete:
+Human-P.0	latimes.431856	3	289	rater4	Accuracy/Addition	Minor	Die schriftliche Stellungnahme der Klinik lautete:
+Human-P.0	latimes.431856	3	289	rater4	Accuracy/Mistranslation	Minor	Die schriftliche Stellungnahme der Klinik lautete:
+Human-P.0	sky.com.20683	8	315	rater4	Accuracy/Mistranslation	Major	Mit den Administratoren von Thomas Cook über einen potenziellen Handel sprechen manchen
+Human-P.0	sky.com.20683	11	318	rater4	Terminology/Inappropriate for context	Major	Zahlungsfähig sind die vier Rentensysteme der Firma
+Human-P.0	sky.com.20683	13	320	rater4	No-error	no-error	Beeinträchtigt werden die Anstrengungen, das Geschäft perfekt zu machen
+Human-P.0	novinite.com.35573	3	383	rater4	Style/Awkward	Minor	Im Mittelpunkt vermehrter Tätigkeiten der NATO am Schwarzen Meer steht die Basis
+Human-P.0	novinite.com.35573	3	383	rater4	Style/Awkward	Minor	Im Mittelpunkt vermehrter Tätigkeiten der NATO am Schwarzen Meer steht die Basis
+Human-P.0	novinite.com.35573	3	383	rater4	Accuracy/Mistranslation	Minor	Im Mittelpunkt vermehrter Tätigkeiten der NATO am Schwarzen Meer steht die Basis
+Human-P.0	sciencedaily.com.75569	3	425	rater4	Terminology/Inappropriate for context	Minor	Hunderte Bestandteile einschließen können Galaxienhaufen im derzeitigen
+Human-P.0	sciencedaily.com.75569	3	425	rater4	Style/Awkward	Minor	Hunderte Bestandteile einschließen können Galaxienhaufen im derzeitigen
+Human-P.0	sciencedaily.com.75569	3	425	rater4	Fluency/Spelling	Neutral	Hunderte Bestandteile einschließen können Galaxienhaufen im derzeitigen
+Human-P.0	sciencedaily.com.75569	3	425	rater4	Accuracy/Mistranslation	Minor	Hunderte Bestandteile einschließen können Galaxienhaufen im derzeitigen
+Human-P.0	sciencedaily.com.75569	3	425	rater4	Accuracy/Mistranslation	Minor	Hunderte Bestandteile einschließen können Galaxienhaufen im derzeitigen
+Human-P.0	foxnews.100091	6	438	rater4	Accuracy/Mistranslation	Minor	Darüber, eine Bewerberin um die Präsidentschaft
+Human-P.0	foxnews.100091	6	438	rater4	Accuracy/Addition	Minor	Darüber, eine Bewerberin um die Präsidentschaft
+Human-P.0	foxnews.100091	6	438	rater4	Accuracy/Mistranslation	Neutral	Darüber, eine Bewerberin um die Präsidentschaft
+Human-P.0	foxnews.100091	6	438	rater4	Style/Awkward	Minor	Darüber, eine Bewerberin um die Präsidentschaft
+Human-P.0	foxnews.100091	6	438	rater4	Accuracy/Mistranslation	Minor	Darüber, eine Bewerberin um die Präsidentschaft
+Human-P.0	foxnews.100091	6	438	rater4	Style/Awkward	Major	Darüber, eine Bewerberin um die Präsidentschaft
+OPPO.1535	seattle_times.7111	1	476	rater3	Style/Awkward	Minor	Tennessee 
+OPPO.1535	seattle_times.7111	1	476	rater3	Accuracy/Mistranslation	Major	Tennessee 
+Human-P.0	huffingtonpost.com.19376	4	551	rater1	Accuracy/Omission	Minor	Vor allem die Probleme, dass das Erkennen der Angehörigen
+Human-P.0	huffingtonpost.com.19376	6	553	rater2	Fluency/Grammar	Minor	Von 511 anno 2017 auf 541 anno
+Human-P.0	huffingtonpost.com.19376	6	553	rater2	Style/Awkward	Minor	Von 511 anno 2017 auf 541 anno
+Human-P.0	euronews-en.185708	9	639	rater4	Accuracy/Mistranslation	Minor	Am Freitag streikte Oladosu Adenike in der nigerianischen Hauptstadt Abuja zum 46. Mal
+Human-P.0	euronews-en.185708	9	639	rater4	Accuracy/Omission	Minor	Am Freitag streikte Oladosu Adenike in der nigerianischen Hauptstadt Abuja zum 46. Mal
+Huoshan_Translate.832	huffingtonpost.com.19347	1	643	rater6	Accuracy/Untranslated text	Minor	Serena Williams Geldstrafe $
+eTranslation.737	express.co.uk.11102	3	660	rater4	Accuracy/Mistranslation	Minor	Nachdem er 1982 den klassischen Track Eminence Front
+eTranslation.737	express.co.uk.11102	3	660	rater4	Accuracy/Mistranslation	Minor	Nachdem er 1982 den klassischen Track Eminence Front
+Huoshan_Translate.832	express.co.uk.11102	3	660	rater4	Accuracy/Mistranslation	Minor	Nachdem er 1982 den klassischen Track Eminence Front
+Huoshan_Translate.832	express.co.uk.11102	3	660	rater4	Accuracy/Mistranslation	Minor	Nachdem er 1982 den klassischen Track Eminence Front
+Online-A.1574	express.co.uk.11102	3	660	rater4	Accuracy/Mistranslation	Minor	Nachdem er 1982 den klassischen Track Eminence Front
+Online-A.1574	express.co.uk.11102	3	660	rater4	Fluency/Spelling	Minor	Nachdem er 1982 den klassischen Track Eminence Front
+Online-B.1590	express.co.uk.11102	3	660	rater4	Terminology/Inappropriate for context	Minor	Nachdem Daltrey 1982 den klassischen Titel Eminence Front
+Online-B.1590	express.co.uk.11102	3	660	rater4	Accuracy/Mistranslation	Minor	Nachdem Daltrey 1982 den klassischen Titel Eminence Front
+OPPO.1535	express.co.uk.11102	3	660	rater4	Accuracy/Mistranslation	Minor	Nachdem Daltrey 1982 den klassischen Track Eminence Front
+OPPO.1535	express.co.uk.11102	3	660	rater4	Accuracy/Mistranslation	Minor	Nachdem Daltrey 1982 den klassischen Track Eminence Front
+Tencent_Translation.1520	express.co.uk.11102	3	660	rater4	Accuracy/Mistranslation	Minor	Nachdem er 1982 den klassischen Track Eminence Front
+Tencent_Translation.1520	express.co.uk.11102	3	660	rater4	Accuracy/Mistranslation	Major	Nachdem er 1982 den klassischen Track Eminence Front
+Human-P.0	metro.co.uk.12158	9	887	rater1	Accuracy/Addition	Major	Attenborough
+Huoshan_Translate.832	metro.co.uk.12158	18	896	rater1	Accuracy/Omission	Minor	Life In Colour
+Tencent_Translation.1520	metro.co.uk.12158	18	896	rater1	Accuracy/Omission	Minor	Life In Colour
+Tohoku-AIP-NTT.890	metro.co.uk.12158	18	896	rater1	Style/Awkward	Minor	Life In Colour
+Tencent_Translation.1520	rt.com.113881	8	956	rater3	Accuracy/Mistranslation	Minor	Und die Untermauerung
+Tencent_Translation.1520	rt.com.113881	8	956	rater3	Accuracy/Mistranslation	Major	Und die Untermauerung
+Tencent_Translation.1520	rt.com.113881	8	956	rater3	Accuracy/Mistranslation	Minor	Und die Untermauerung
+Huoshan_Translate.832	reuters.276541	2	1148	rater3	Accuracy/Untranslated text	Minor	Federal Emergency Management Agency (FEMA) Acting
+Huoshan_Translate.832	reuters.276541	2	1148	rater3	Accuracy/Mistranslation	Minor	Federal Emergency Management Agency (FEMA) Acting
+Online-A.1574	sky.com.20669	1	1155	rater2	Fluency/Punctuation	Minor	"""Mann zündet Haustür """
+Human-P.0	euronews-en.185744	8	1312	rater4	Accuracy/Mistranslation	Minor	Mit dem Preis, dessen Name von dem Landschaftsmaler JMW
+eTranslation.737	abcnews.363994	5	1317	rater4	Accuracy/Mistranslation	Minor	Gerichtsdokumente sagen, dass der Chirurg einen Walmart-Laden
+eTranslation.737	abcnews.363994	5	1317	rater4	Accuracy/Mistranslation	Minor	Gerichtsdokumente sagen, dass der Chirurg einen Walmart-Laden
+eTranslation.737	abcnews.363994	5	1317	rater4	Accuracy/Mistranslation	Minor	Gerichtsdokumente sagen, dass der Chirurg einen Walmart-Laden
+Online-B.1590	abcnews.363994	5	1317	rater4	Accuracy/Mistranslation	Minor	Gerichtsdokumente besagen, dass der Chirurg ein Walmart-Geschäft
+Online-B.1590	abcnews.363994	5	1317	rater4	Fluency/Grammar	Major	Gerichtsdokumente besagen, dass der Chirurg ein Walmart-Geschäft
+Online-B.1590	abcnews.363994	5	1317	rater4	Accuracy/Mistranslation	Minor	Gerichtsdokumente besagen, dass der Chirurg ein Walmart-Geschäft
+Online-B.1590	abcnews.363994	5	1317	rater4	Accuracy/Mistranslation	Minor	Gerichtsdokumente besagen, dass der Chirurg ein Walmart-Geschäft
+OPPO.1535	abcnews.363994	5	1317	rater4	Accuracy/Mistranslation	Minor	Gerichtsdokumente besagen, dass der Chirurg einen Walmart-Laden
+OPPO.1535	abcnews.363994	5	1317	rater4	Accuracy/Mistranslation	Minor	Gerichtsdokumente besagen, dass der Chirurg einen Walmart-Laden
+OPPO.1535	abcnews.363994	5	1317	rater4	Accuracy/Mistranslation	Minor	Gerichtsdokumente besagen, dass der Chirurg einen Walmart-Laden
+OPPO.1535	abcnews.363994	5	1317	rater4	Accuracy/Mistranslation	Minor	Gerichtsdokumente besagen, dass der Chirurg einen Walmart-Laden
+Tencent_Translation.1520	abcnews.363994	5	1317	rater4	Accuracy/Mistranslation	Major	Gerichtsdokumente besagen, dass der Chirurg einen Walmart-Laden
+Tencent_Translation.1520	abcnews.363994	5	1317	rater4	Style/Awkward	Major	Gerichtsdokumente besagen, dass der Chirurg einen Walmart-Laden
+Tencent_Translation.1520	abcnews.363994	5	1317	rater4	Accuracy/Mistranslation	Minor	Gerichtsdokumente besagen, dass der Chirurg einen Walmart-Laden
+Tencent_Translation.1520	abcnews.363994	5	1317	rater4	Accuracy/Mistranslation	Minor	Gerichtsdokumente besagen, dass der Chirurg einen Walmart-Laden
+Tohoku-AIP-NTT.890	abcnews.363994	5	1317	rater4	Accuracy/Mistranslation	Major	Gerichtsdokumente besagen, dass der Chirurg einen Walmart-Laden
+Tohoku-AIP-NTT.890	abcnews.363994	5	1317	rater4	Accuracy/Mistranslation	Minor	Gerichtsdokumente besagen, dass der Chirurg einen Walmart-Laden
+Tohoku-AIP-NTT.890	abcnews.363994	5	1317	rater4	Accuracy/Mistranslation	Minor	Gerichtsdokumente besagen, dass der Chirurg einen Walmart-Laden
+Tohoku-AIP-NTT.890	abcnews.363994	5	1317	rater4	Accuracy/Mistranslation	Minor	Gerichtsdokumente besagen, dass der Chirurg einen Walmart-Laden
+Online-A.1574	cbsnews.302172	1	1363	rater3	Fluency/Spelling	Minor	Seth Dunlap Louisiana
+Online-A.1574	cbsnews.302172	1	1363	rater3	Fluency/Spelling	Minor	Seth Dunlap Louisiana
+Online-A.1574	cbsnews.302172	1	1363	rater3	Style/Awkward	Minor	Seth Dunlap Louisiana
+Online-A.1574	cbsnews.302172	1	1363	rater3	Accuracy/Mistranslation	Major	Seth Dunlap Louisiana
+OPPO.1535	cbsnews.302172	1	1363	rater3	Fluency/Spelling	Minor	Seth Dunlap Louisiana
+OPPO.1535	cbsnews.302172	1	1363	rater3	Style/Awkward	Minor	Seth Dunlap Louisiana
+OPPO.1535	cbsnews.302172	1	1363	rater3	Style/Awkward	Minor	Seth Dunlap Louisiana
+Tohoku-AIP-NTT.890	cbsnews.302172	1	1363	rater3	Accuracy/Mistranslation	Major	Seth Dunlap Louisiana
+Online-A.1574	standard.co.uk.14516	7	1392	rater4	Accuracy/Mistranslation	Minor	Millers Text
+OPPO.1535	standard.co.uk.14516	7	1392	rater4	Accuracy/Mistranslation	Minor	Als gebürtiger Pittsburgher, dessen richtiger
+Tencent_Translation.1520	standard.co.uk.14516	7	1392	rater4	Accuracy/Mistranslation	Minor	Als gebürtiger Pittsburgh, dessen richtiger
+Tohoku-AIP-NTT.890	standard.co.uk.14516	7	1392	rater3	Accuracy/Mistranslation	Minor	Ein gebürtiger Pittsburghaner
+Tohoku-AIP-NTT.890	standard.co.uk.14516	7	1392	rater4	Fluency/Grammar	Minor	Ein gebürtiger Pittsburghaner, dessen richtiger

@@ -1,0 +1,218 @@
+﻿
+
+RelativePath : results\check_segments.log
+Length       : 0
+
+RelativePath : results\week10\file_inventory.csv
+Length       : 260
+
+RelativePath : results\week10\data_quality\annotation_row
+               s_distribution.csv
+Length       : 153
+
+RelativePath : results\week10\data_quality\anomaly_condit
+               ion_counts.csv
+Length       : 166
+
+RelativePath : results\week10\data_quality\data_summary.c
+               sv
+Length       : 186
+
+RelativePath : results\week10\data_quality\docs_with_mult
+               iple_doc_ids.csv
+Length       : 2703
+
+RelativePath : results\week10\data_quality\document_level
+               _summary.csv
+Length       : 3462
+
+RelativePath : results\week10\data_quality\document_mappi
+               ng_summary.csv
+Length       : 109
+
+RelativePath : results\week10\data_quality\doc_ids_with_m
+               ultiple_docs.csv
+Length       : 192
+
+RelativePath : results\week10\data_quality\doc_id_to_doc_
+               mapping.csv
+Length       : 29288
+
+RelativePath : results\week10\data_quality\doc_to_doc_id_
+               mapping.csv
+Length       : 29288
+
+RelativePath : results\week10\data_quality\exact_duplicat
+               e_rows.csv
+Length       : 67
+
+RelativePath : results\week10\data_quality\incomplete_rat
+               er_segments.csv
+Length       : 820
+
+RelativePath : results\week10\data_quality\mt_annotation_
+               consistency_summary.csv
+Length       : 186
+
+RelativePath : results\week10\data_quality\mt_major_vote_
+               distribution.csv
+Length       : 60
+
+RelativePath : results\week10\data_quality\mt_primary_lab
+               el_distribution_corrected.csv
+Length       : 44
+
+RelativePath : results\week10\data_quality\mt_rater_cover
+               age_by_system.csv
+Length       : 222
+
+RelativePath : results\week10\data_quality\mt_rater_level
+               _votes_diagnostic.csv
+Length       : 1642309
+
+RelativePath : results\week10\data_quality\mt_rater_level
+               _votes_diagnostic_corrected.csv
+Length       : 1701888
+
+RelativePath : results\week10\data_quality\mt_same_rater_
+               multiple_annotations.csv
+Length       : 807009
+
+RelativePath : results\week10\data_quality\mt_same_rater_
+               multiple_targets.csv
+Length       : 46733
+
+RelativePath : results\week10\data_quality\mt_segment_maj
+               or_vote_diagnostic.csv
+Length       : 478016
+
+RelativePath : results\week10\data_quality\mt_segment_rat
+               er_distribution.csv
+Length       : 47
+
+RelativePath : results\week10\data_quality\mt_segment_ser
+               ious_vote_diagnostic_corrected.csv
+Length       : 517757
+
+RelativePath : results\week10\data_quality\mt_serious_vot
+               e_distribution_corrected.csv
+Length       : 62
+
+RelativePath : results\week10\data_quality\mt_target_vari
+               ant_annotation_details.tsv
+Length       : 20587
+
+RelativePath : results\week10\data_quality\mt_target_vari
+               ant_counts.csv
+Length       : 3546173
+
+RelativePath : results\week10\data_quality\mt_target_vari
+               ant_problems.csv
+Length       : 101009
+
+RelativePath : results\week10\data_quality\mt_target_vari
+               ant_statistics.csv
+Length       : 479728
+
+RelativePath : results\week10\data_quality\multiple_targe
+               t_examples.tsv
+Length       : 14864
+
+RelativePath : results\week10\data_quality\possible_repea
+               ted_text.tsv
+Length       : 498
+
+RelativePath : results\week10\data_quality\possible_repea
+               ted_text_full.tsv
+Length       : 14978
+
+RelativePath : results\week10\data_quality\rater_level_an
+               notation_summary.csv
+Length       : 3620673
+
+RelativePath : results\week10\data_quality\remaining_targ
+               et_examples.tsv
+Length       : 63299
+
+RelativePath : results\week10\data_quality\remaining_targ
+               et_summary.csv
+Length       : 846
+
+RelativePath : results\week10\data_quality\repeated_targe
+               t_candidates.tsv
+Length       : 21280
+
+RelativePath : results\week10\data_quality\repeated_targe
+               t_manual_review.tsv
+Length       : 11822
+
+RelativePath : results\week10\data_quality\segments_not_h
+               aving_three_rows.csv
+Length       : 447883
+
+RelativePath : results\week10\data_quality\segments_with_
+               inconsistent_text.csv
+Length       : 599252
+
+RelativePath : results\week10\data_quality\segment_anomal
+               ies.csv
+Length       : 599252
+
+RelativePath : results\week10\data_quality\segment_anomal
+               y_diagnostics.csv
+Length       : 925811
+
+RelativePath : results\week10\data_quality\segment_level_
+               summary.csv
+Length       : 682939
+
+RelativePath : results\week10\data_quality\segment_rater_
+               multiple_rows.csv
+Length       : 881075
+
+RelativePath : results\week10\data_quality\segment_rater_
+               row_counts.csv
+Length       : 2082979
+
+RelativePath : results\week10\data_quality\segment_statis
+               tics.csv
+Length       : 682939
+
+RelativePath : results\week10\data_quality\system_summary
+               .csv
+Length       : 358
+
+RelativePath : results\week10\data_quality\target_variant
+               s_remaining_examples.tsv
+Length       : 63299
+
+RelativePath : results\week10\data_quality\target_variant
+               _normalization.csv
+Length       : 756612
+
+RelativePath : results\week10\data_quality\target_variant
+               _normalization_summary.csv
+Length       : 179
+
+RelativePath : results\week10\data_quality\unique_raters_
+               distribution.csv
+Length       : 45
+
+RelativePath : results\week10\logs\audit_details.txt
+Length       : 2856680
+
+RelativePath : results\week10\logs\check_segments.log
+Length       : 808
+
+RelativePath : results\week10\logs\data_quality_summary.l
+               og
+Length       : 530
+
+RelativePath : results\week10\logs\project_audit.log
+Length       : 103
+
+RelativePath : results\week10\logs\relevant_files.txt
+Length       : 438
+
+
+

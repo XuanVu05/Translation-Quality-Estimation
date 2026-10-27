@@ -1,0 +1,8 @@
+2026-10-26 08:52:20,871 | INFO | Dataset shape: (79020, 9)
+2026-10-26 08:52:20,875 | INFO | Unique documents: 130
+2026-10-26 08:52:20,876 | INFO | Unique doc_id values: 26
+2026-10-26 08:52:20,886 | INFO | Unique doc-doc_id pairs: 1418
+2026-10-26 08:52:20,887 | INFO | Unique segment keys: 14180
+2026-10-26 08:52:20,887 | INFO | Segment anomalies: 12387
+2026-10-26 08:52:20,994 | INFO | Exact duplicate rows: 0
+2026-10-26 08:52:20,994 | INFO | Outputs saved to D:\Translation Quality Estimation\results\week10\data_quality
