@@ -3,7 +3,7 @@ import pandas as pd
 from pathlib import Path
 from sklearn.model_selection import GroupShuffleSplit
 
-ROOT = Path(r"D:\Translation Quality Estimation")
+ROOT = Path(__file__).resolve().parent.parent
 DATA_PATH = ROOT / "results" / "week10" / "model_data" / "mt_segment_level_original_outputs.csv"
 OUT_DIR = ROOT / "results" / "week10" / "model_data"
 OUT_DIR.mkdir(parents=True, exist_ok=True)

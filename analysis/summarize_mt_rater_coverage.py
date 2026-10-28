@@ -1,7 +1,7 @@
-﻿from pathlib import Path
+from pathlib import Path
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "mqm_newstest2020_ende.tsv"
 OUT = ROOT / "results" / "week10" / "data_quality"
 OUT.mkdir(parents=True, exist_ok=True)

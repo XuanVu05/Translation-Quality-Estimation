@@ -24,7 +24,7 @@ import pandas as pd
 from scipy.stats import spearmanr
 from sklearn.metrics import average_precision_score, precision_score, recall_score, matthews_corrcoef
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 MQM_PATH = ROOT / "mqm_newstest2020_ende.tsv"
 SPLIT_PATH = ROOT / "results" / "week10" / "model_data" / "segments_with_fixed_splits.csv"
 OUT = ROOT / "results" / "week10" / "priority2_3"

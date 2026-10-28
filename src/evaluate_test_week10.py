@@ -11,7 +11,7 @@ from sklearn.metrics import average_precision_score, matthews_corrcoef
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import LinearSVC
 
-ROOT = Path(r"D:\Translation Quality Estimation")
+ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "results" / "week10" / "model_data"
 OUT_DIR = ROOT / "results" / "week10" / "test_evaluation"
 OUT_DIR.mkdir(parents=True, exist_ok=True)

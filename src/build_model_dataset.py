@@ -1,7 +1,7 @@
-﻿import pandas as pd
+import pandas as pd
 from pathlib import Path
 
-ROOT = Path(r"D:\Translation Quality Estimation")
+ROOT = Path(__file__).resolve().parent.parent
 MQM_PATH = ROOT / "mqm_newstest2020_ende.tsv"
 DETAILS_PATH = ROOT / "data" / "details" / "en-de.txt"
 OUTPUT_DIR = ROOT / "original_outputs"

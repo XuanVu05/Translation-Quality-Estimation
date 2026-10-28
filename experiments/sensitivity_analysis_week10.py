@@ -10,7 +10,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import average_precision_score, matthews_corrcoef
 
-ROOT = Path(r"D:\Translation Quality Estimation")
+ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "results" / "week10" / "model_data"
 OUT_DIR = ROOT / "results" / "week10" / "sensitivity_analysis"
 OUT_DIR.mkdir(parents=True, exist_ok=True)

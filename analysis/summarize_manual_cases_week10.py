@@ -2,7 +2,7 @@
 from pathlib import Path
 import pandas as pd
 
-ROOT = Path(r"D:\Translation Quality Estimation")
+ROOT = Path(__file__).resolve().parent.parent
 INPUT = (
     ROOT / "results" / "week10" / "error_analysis"
     / "selected_cases_rater_annotations.csv"

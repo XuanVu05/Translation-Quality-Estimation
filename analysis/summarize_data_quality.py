@@ -3,7 +3,7 @@ from pathlib import Path
 import logging
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "mqm_newstest2020_ende.tsv"
 OUT = ROOT / "results" / "week10" / "data_quality"
 LOG = ROOT / "results" / "week10" / "logs"

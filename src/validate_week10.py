@@ -2,7 +2,7 @@
 import pandas as pd
 from pathlib import Path
 
-ROOT = Path(r"D:\Translation Quality Estimation")
+ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "results" / "week10" / "model_data"
 
 FILES = {
