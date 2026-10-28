@@ -1,0 +1,25 @@
+model,description,metric,value,train_rows,dev_rows,train_features,dev_features
+LR_Base,TF-IDF source/target + 12 surface features,PR_AUC,0.19605173056183628,6797,1554,58150,58150
+LR_Base,TF-IDF source/target + 12 surface features,Recall_at_20pct,0.2889908256880734,6797,1554,58150,58150
+LR_Base,TF-IDF source/target + 12 surface features,Precision_at_20pct,0.20257234726688103,6797,1554,58150,58150
+LR_Base,TF-IDF source/target + 12 surface features,Lift_at_20pct,1.4440248974896015,6797,1554,58150,58150
+LR_Base,TF-IDF source/target + 12 surface features,MCC_at_20pct,0.08971746018078439,6797,1554,58150,58150
+LR_Base,TF-IDF source/target + 12 surface features,n_top,311.0,6797,1554,58150,58150
+LR_Base,TF-IDF source/target + 12 surface features,prevalence,0.1402831402831403,6797,1554,58150,58150
+LR_Base,TF-IDF source/target + 12 surface features,positive_samples_in_top20pct,63.0,6797,1554,58150,58150
+LR_Plus_System,Base features + one-hot system identity,PR_AUC,0.19911566303717446,6797,1554,58157,58157
+LR_Plus_System,Base features + one-hot system identity,Recall_at_20pct,0.2798165137614679,6797,1554,58157,58157
+LR_Plus_System,Base features + one-hot system identity,Precision_at_20pct,0.19614147909967847,6797,1554,58157,58157
+LR_Plus_System,Base features + one-hot system identity,Lift_at_20pct,1.3981828372518363,6797,1554,58157,58157
+LR_Plus_System,Base features + one-hot system identity,MCC_at_20pct,0.08045484171673051,6797,1554,58157,58157
+LR_Plus_System,Base features + one-hot system identity,n_top,311.0,6797,1554,58157,58157
+LR_Plus_System,Base features + one-hot system identity,prevalence,0.1402831402831403,6797,1554,58157,58157
+LR_Plus_System,Base features + one-hot system identity,positive_samples_in_top20pct,61.0,6797,1554,58157,58157
+System_Only,One-hot system identity only,PR_AUC,0.15680191987531436,6797,1554,7,7
+System_Only,One-hot system identity only,Recall_at_20pct,0.25229357798165136,6797,1554,7,7
+System_Only,One-hot system identity only,Precision_at_20pct,0.17684887459807075,6797,1554,7,7
+System_Only,One-hot system identity only,Lift_at_20pct,1.2606566565385409,6797,1554,7,7
+System_Only,One-hot system identity only,MCC_at_20pct,0.052666986324568885,6797,1554,7,7
+System_Only,One-hot system identity only,n_top,311.0,6797,1554,7,7
+System_Only,One-hot system identity only,prevalence,0.1402831402831403,6797,1554,7,7
+System_Only,One-hot system identity only,positive_samples_in_top20pct,55.0,6797,1554,7,7

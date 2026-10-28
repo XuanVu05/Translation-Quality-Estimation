@@ -1,0 +1,48 @@
+{
+  "status": "candidate_locked",
+  "created_at_utc": "2026-10-28T10:42:19.951380+00:00",
+  "split_method": "GroupShuffleSplit by doc",
+  "random_state_first_split": 42,
+  "random_state_second_split": 43,
+  "split_ratios_target": {
+    "train": 0.7,
+    "dev": 0.15,
+    "test": 0.15
+  },
+  "label_column": "y_primary",
+  "source_csv": "results\\week10\\model_data\\segments_with_fixed_splits.csv",
+  "source_sha256": "780cd9f0b2b32042ad95f98e67318c03814fbe895e1f0ef8755da847e8d287ab",
+  "snapshot_csv": "results\\week10\\locked_split\\segments_week10_90_20_20.csv",
+  "snapshot_sha256": "780cd9f0b2b32042ad95f98e67318c03814fbe895e1f0ef8755da847e8d287ab",
+  "total_rows": 9926,
+  "total_documents": 130,
+  "total_positive": 1183,
+  "summary": {
+    "train": {
+      "rows": 6797,
+      "docs": 90,
+      "positive": 803,
+      "systems": 7,
+      "positive_rate": 0.11814
+    },
+    "dev": {
+      "rows": 1554,
+      "docs": 20,
+      "positive": 218,
+      "systems": 7,
+      "positive_rate": 0.140283
+    },
+    "test": {
+      "rows": 1575,
+      "docs": 20,
+      "positive": 162,
+      "systems": 7,
+      "positive_rate": 0.102857
+    }
+  },
+  "document_overlap": {
+    "train_dev": 0,
+    "train_test": 0,
+    "dev_test": 0
+  }
+}

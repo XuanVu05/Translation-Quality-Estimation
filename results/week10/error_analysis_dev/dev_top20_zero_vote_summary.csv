@@ -1,0 +1,17 @@
+﻿category,severity,annotation_rows
+Accuracy/Mistranslation,Minor,253
+No-error,no-error,202
+Style/Awkward,Minor,127
+Fluency/Punctuation,Minor,104
+Fluency/Grammar,Minor,83
+Terminology/Inappropriate for context,Minor,51
+Accuracy/Untranslated text,Minor,21
+Accuracy/Omission,Minor,14
+Style/Awkward,Neutral,12
+Fluency/Spelling,Minor,11
+Accuracy/Addition,Minor,8
+Accuracy/Untranslated text,Neutral,2
+Fluency/Inconsistency,Minor,2
+Accuracy/Mistranslation,Neutral,1
+Fluency/Register,Minor,1
+Style/Awkward,Major,1

@@ -1,0 +1,18 @@
+WEEK 10 SPLIT QA REPORT
+Status: candidate_locked
+Total rows: 9926
+Total documents: 130
+Total positive labels: 1183
+
+TRAIN: {'rows': 6797, 'docs': 90, 'positive': 803, 'systems': 7, 'positive_rate': 0.11814}
+DEV: {'rows': 1554, 'docs': 20, 'positive': 218, 'systems': 7, 'positive_rate': 0.140283}
+TEST: {'rows': 1575, 'docs': 20, 'positive': 162, 'systems': 7, 'positive_rate': 0.102857}
+
+Missing required values: 0
+Duplicate system/doc/seg_id rows: 0
+Document overlaps: {'train_dev': 0, 'train_test': 0, 'dev_test': 0}
+Source SHA-256: 780cd9f0b2b32042ad95f98e67318c03814fbe895e1f0ef8755da847e8d287ab
+Snapshot SHA-256: 780cd9f0b2b32042ad95f98e67318c03814fbe895e1f0ef8755da847e8d287ab
+
+NOTE: This script validates and snapshots the existing split.
+It does not independently regenerate the split from raw input.

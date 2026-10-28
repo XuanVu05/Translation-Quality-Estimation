@@ -1,0 +1,27 @@
+{
+  "created_at_utc": "2026-10-28T16:44:44.438034+00:00",
+  "split": "development",
+  "ranking_score": "score_LR_Base",
+  "ranking_order": "descending; stable mergesort",
+  "review_budget": "ceil(20% of 1554) = 311",
+  "selected_condition": "serious_votes == 0 within top 20%",
+  "expected_selected_segments": 180,
+  "actual_selected_segments": 180,
+  "unique_segment_keys": 180,
+  "segments_with_matched_mqm_target": 180,
+  "segments_without_matched_mqm_target": 0,
+  "matched_annotation_rows": 893,
+  "unmatched_candidate_annotation_rows": 66,
+  "inputs": [
+    "results\\week10\\model_data\\dev_segments.csv",
+    "results\\week10\\ablation_dev\\dev_ablation_predictions.csv",
+    "mqm_newstest2020_ende.tsv"
+  ],
+  "outputs": [
+    "results\\week10\\error_analysis_dev\\dev_top20_zero_vote_segments.csv",
+    "results\\week10\\error_analysis_dev\\dev_top20_zero_vote_annotations.csv",
+    "results\\week10\\error_analysis_dev\\dev_top20_zero_vote_summary.csv"
+  ],
+  "normalization": "Remove <v> span tags, Unicode NFKC, collapse whitespace",
+  "note": "serious_votes == 0 means the operational critical-error voting criterion was not met; it does not mean the translation is error-free. Annotation counts are not independent segment counts."
+}

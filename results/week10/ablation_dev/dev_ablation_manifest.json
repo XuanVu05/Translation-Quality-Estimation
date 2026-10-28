@@ -1,0 +1,55 @@
+{
+  "experiment": "Week 10 Dev ablation",
+  "seed": 42,
+  "top_fraction": 0.2,
+  "train_rows": 6797,
+  "dev_rows": 1554,
+  "train_documents": 90,
+  "dev_documents": 20,
+  "train_positive": 803,
+  "dev_positive": 218,
+  "train_systems": [
+    "Huoshan_Translate.832",
+    "OPPO.1535",
+    "Online-A.1574",
+    "Online-B.1590",
+    "Tencent_Translation.1520",
+    "Tohoku-AIP-NTT.890",
+    "eTranslation.737"
+  ],
+  "dev_systems": [
+    "Huoshan_Translate.832",
+    "OPPO.1535",
+    "Online-A.1574",
+    "Online-B.1590",
+    "Tencent_Translation.1520",
+    "Tohoku-AIP-NTT.890",
+    "eTranslation.737"
+  ],
+  "configurations": [
+    {
+      "name": "LR_Base",
+      "description": "TF-IDF source/target + 12 surface features",
+      "train_feature_count": 58150,
+      "dev_feature_count": 58150
+    },
+    {
+      "name": "LR_Plus_System",
+      "description": "Base features + one-hot system identity",
+      "train_feature_count": 58157,
+      "dev_feature_count": 58157
+    },
+    {
+      "name": "System_Only",
+      "description": "One-hot system identity only",
+      "train_feature_count": 7,
+      "dev_feature_count": 7
+    }
+  ],
+  "test_set_loaded": false,
+  "output_files": [
+    "results\\week10\\ablation_dev\\dev_ablation_metrics.csv",
+    "results\\week10\\ablation_dev\\dev_ablation_predictions.csv",
+    "results\\week10\\ablation_dev\\dev_ablation_manifest.json"
+  ]
+}
