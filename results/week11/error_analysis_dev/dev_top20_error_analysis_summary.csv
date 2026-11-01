@@ -1,0 +1,9 @@
+﻿metric,value
+Selected unique segments,180
+Matched segments,180
+Segments with Minor error,151
+Segments with Major error,2
+Segments with any Minor/Major error,151
+Segments with No-error annotation,107
+Segments with annotator disagreement,78
+Unmatched segments,0
