@@ -1,0 +1,60 @@
+﻿case,system,doc,doc_id,seg_id,rater,category,severity,annotated_span,span_count
+1,Online-B.1590,abcnews.363994,5,1317,rater4,Accuracy/Mistranslation,Minor,Das Überwachungsvideo unterstützt die Ereigniskette.,1
+1,Online-B.1590,abcnews.363994,5,1317,rater4,Fluency/Grammar,Major," Man sagt,",1
+1,Online-B.1590,abcnews.363994,5,1317,rater4,Accuracy/Mistranslation,Minor,geschoben ,1
+1,Online-B.1590,abcnews.363994,5,1317,rater4,Accuracy/Mistranslation,Minor,konfrontiert ,1
+1,Online-B.1590,abcnews.363994,5,1317,rater4,Style/Awkward,Minor,"Gerichtsdokumente besagen, dass der Chirurg ein Walmart-Geschäft verließ, ",1
+1,Online-B.1590,abcnews.363994,5,1317,rater5,Accuracy/Mistranslation,Minor, Man,1
+1,Online-B.1590,abcnews.363994,5,1317,rater5,Accuracy/Mistranslation,Minor,konfrontiert,1
+1,Online-B.1590,abcnews.363994,5,1317,rater6,Style/Awkward,Minor,Walmart-Geschäft,1
+1,Online-B.1590,abcnews.363994,5,1317,rater6,Accuracy/Mistranslation,Minor,Klientin,1
+1,Online-B.1590,abcnews.363994,5,1317,rater6,Accuracy/Mistranslation,Minor,unterstützt,1
+1,Online-B.1590,abcnews.363994,5,1317,rater6,Accuracy/Mistranslation,Minor,Man ,1
+2,eTranslation.737,standard.co.uk.14516,1,1386,rater3,Style/Awkward,Minor,Mac-Miller-Tod,1
+2,eTranslation.737,standard.co.uk.14516,1,1386,rater4,Style/Awkward,Major,Mac-Miller-Tod,1
+2,eTranslation.737,standard.co.uk.14516,1,1386,rater5,Style/Awkward,Minor,Mac-Miller-Tod,1
+3,Huoshan_Translate.832,standard.co.uk.14516,2,1387,rater3,No-error,no-error,,0
+3,Huoshan_Translate.832,standard.co.uk.14516,2,1387,rater4,Accuracy/Omission,Minor, ,1
+3,Huoshan_Translate.832,standard.co.uk.14516,2,1387,rater5,No-error,no-error,,0
+4,Tohoku-AIP-NTT.890,reuters.276702,4,538,rater1,Fluency/Grammar,Minor,da,1
+4,Tohoku-AIP-NTT.890,reuters.276702,4,538,rater2,No-error,no-error,,0
+4,Tohoku-AIP-NTT.890,reuters.276702,4,538,rater4,Fluency/Grammar,Minor,da ,1
+5,eTranslation.737,cnn.385556,17,1182,rater3,Terminology/Inappropriate for context,Minor,nirgendwo hingehen,1
+5,eTranslation.737,cnn.385556,17,1182,rater3,Accuracy/Mistranslation,Minor,die Abstimmung ,1
+5,eTranslation.737,cnn.385556,17,1182,rater3,Accuracy/Untranslated text,Minor,Impeachment,1
+5,eTranslation.737,cnn.385556,17,1182,rater3,Fluency/Grammar,Minor,unterstützen,1
+5,eTranslation.737,cnn.385556,17,1182,rater3,Fluency/Grammar,Minor,haben,1
+5,eTranslation.737,cnn.385556,17,1182,rater4,Accuracy/Omission,Minor,.,1
+5,eTranslation.737,cnn.385556,17,1182,rater4,Accuracy/Mistranslation,Minor,nirgendwo hingehen.,1
+5,eTranslation.737,cnn.385556,17,1182,rater5,No-error,no-error,,0
+6,Online-B.1590,latimes.431856,7,293,rater2,Fluency/Punctuation,Minor,-,1
+6,Online-B.1590,latimes.431856,7,293,rater2,Fluency/Punctuation,Minor,"""",1
+6,Online-B.1590,latimes.431856,7,293,rater2,Fluency/Punctuation,Minor,"""",1
+6,Online-B.1590,latimes.431856,7,293,rater3,Terminology/Inappropriate for context,Minor,gesammelt,1
+6,Online-B.1590,latimes.431856,7,293,rater3,Fluency/Punctuation,Minor,-,1
+6,Online-B.1590,latimes.431856,7,293,rater3,Fluency/Punctuation,Minor,"""",1
+6,Online-B.1590,latimes.431856,7,293,rater3,Fluency/Punctuation,Minor,"""",1
+6,Online-B.1590,latimes.431856,7,293,rater3,Fluency/Grammar,Minor,es,1
+6,Online-B.1590,latimes.431856,7,293,rater4,Accuracy/Mistranslation,Minor,gesammelt ,1
+6,Online-B.1590,latimes.431856,7,293,rater4,Accuracy/Mistranslation,Minor,einen ganztägigen Prozess,1
+6,Online-B.1590,latimes.431856,7,293,rater4,Style/Awkward,Minor,Stadium 4 ,1
+6,Online-B.1590,latimes.431856,7,293,rater4,Fluency/Punctuation,Minor,"""",1
+6,Online-B.1590,latimes.431856,7,293,rater4,Fluency/Punctuation,Minor,"""",1
+7,eTranslation.737,brisbanetimes.com.au.225989,8,1066,rater1,No-error,no-error,,0
+7,eTranslation.737,brisbanetimes.com.au.225989,8,1066,rater4,Accuracy/Mistranslation,Minor,Schlägen,1
+7,eTranslation.737,brisbanetimes.com.au.225989,8,1066,rater6,Accuracy/Untranslated text,Minor,Match,1
+7,eTranslation.737,brisbanetimes.com.au.225989,8,1066,rater6,Style/Awkward,Minor,"In einer idealen Welt würde eine Reihe von Schlägen, die auf Johnson landen",1
+8,Tencent_Translation.1520,telegraph.421295,8,1360,rater3,No-error,no-error,,0
+8,Tencent_Translation.1520,telegraph.421295,8,1360,rater5,No-error,no-error,,0
+8,Tencent_Translation.1520,telegraph.421295,8,1360,rater6,No-error,no-error,,0
+9,Huoshan_Translate.832,express.co.uk.10983,9,213,rater1,No-error,no-error,,0
+9,Huoshan_Translate.832,express.co.uk.10983,9,213,rater5,No-error,no-error,,0
+9,Huoshan_Translate.832,express.co.uk.10983,9,213,rater6,No-error,no-error,,0
+10,OPPO.1535,stv.tv.21636,6,66,rater1,Terminology/Inappropriate for context,Minor,sucht,1
+10,OPPO.1535,stv.tv.21636,6,66,rater1,Accuracy/Addition,Minor,„,1
+10,OPPO.1535,stv.tv.21636,6,66,rater2,Accuracy/Omission,Minor,sind.,1
+10,OPPO.1535,stv.tv.21636,6,66,rater2,Accuracy/Untranslated text,Minor,Control of Dogs Act 2010 ,1
+10,OPPO.1535,stv.tv.21636,6,66,rater2,Style/Awkward,Minor,Meinungen zu Verbesserungen,1
+10,OPPO.1535,stv.tv.21636,6,66,rater2,Accuracy/Mistranslation,Minor,Konsultation ,1
+10,OPPO.1535,stv.tv.21636,6,66,rater6,Fluency/Punctuation,Minor,.,1
+10,OPPO.1535,stv.tv.21636,6,66,rater6,Accuracy/Mistranslation,Minor,Konsultation,1

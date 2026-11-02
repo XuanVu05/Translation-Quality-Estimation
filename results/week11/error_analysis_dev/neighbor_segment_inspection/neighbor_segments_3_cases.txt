@@ -1,0 +1,99 @@
+
+================================================================================
+CASE 5 | PREVIOUS | LOCAL 16 | GLOBAL 1181
+SYSTEM: eTranslation.737
+DOCUMENT: cnn.385556
+
+SOURCE:
+While I find many of the statements in the whistleblower's report disturbing, there's a lot more information that's out there,"" Brindisi said. ""We have to talk to some of these officials that they have listed in the report here and see where it goes.""
+
+ORIGINAL MT TARGET:
+„Während ich viele der Aussagen im Bericht des Whistleblowers beunruhigend finde, gibt es viel mehr Informationen, die da draußen sind“, sagte Brindisi. „Wir müssen mit einigen dieser Beamten sprechen, die sie in dem Bericht hier aufgelistet haben, und sehen, wohin es geht.“
+
+================================================================================
+CASE 5 | CURRENT | LOCAL 17 | GLOBAL 1182
+SYSTEM: eTranslation.737
+DOCUMENT: cnn.385556
+
+SOURCE:
+More than half the members of the US House of Representatives have said they support an impeachment inquiry, according to a CNN count. However, that count includes many Democrats who say they support an impeachment investigation but are still waiting for the results of the probe before deciding whether to finally vote to impeach Trump. Even if the House could pass the vote, it likely would go nowhere in the Republican-controlled Senate, one of many reasons the issue has been politically divisive in the party.
+
+ORIGINAL MT TARGET:
+Mehr als die Hälfte der Mitglieder des US-Repräsentantenhauses haben gesagt, dass sie eine Impeachment-Untersuchung unterstützen, laut einer CNN-Zählung. Allerdings umfasst diese Zählung viele Demokraten, die sagen, dass sie eine Impeachment-Untersuchung unterstützen, aber immer noch auf die Ergebnisse der Untersuchung warten, bevor sie entscheiden, ob sie schließlich für ein Amtsenthebungsverfahren gegen Trump stimmen. Selbst wenn das Repräsentantenhaus die Abstimmung verabschieden könnte, würde es wahrscheinlich im republikanisch kontrollierten Senat nirgendwo hingehen.
+
+================================================================================
+CASE 5 | NEXT | LOCAL 18 | GLOBAL 1183
+SYSTEM: eTranslation.737
+DOCUMENT: cnn.385556
+
+SOURCE:
+Still there has been a surge in support -- more than 75 House members in about three days -- of launching such an inquiry as part of the fallout from Trump's July 25 call with Ukrainian President Volodymyr Zelensky where he discussed former Vice President Joe Biden. There is no evidence of wrongdoing by Biden.
+
+ORIGINAL MT TARGET:
+Dennoch gab es einen Anstieg der Unterstützung – mehr als 75 Mitglieder des Repräsentantenhauses in etwa drei Tagen – für die Einleitung einer solchen Untersuchung als Teil der Folgen von Trumps Anruf am 25. Juli mit dem ukrainischen Präsidenten Wolodymyr Zelensky, wo er den ehemaligen Vizepräsidenten Joe Biden diskutierte. Es gibt keine Beweise für ein Fehlverhalten von Biden.
+
+================================================================================
+CASE 7 | PREVIOUS | LOCAL 7 | GLOBAL 1065
+SYSTEM: eTranslation.737
+DOCUMENT: brisbanetimes.com.au.225989
+
+SOURCE:
+And Johnson's weakness will give the 27 leaders facing him even less incentive to erase crucial red lines, despite the claim by Michael Gove, the UK minister in charge of a no-deal Brexit, that they're ""shifting"" on the backstop.
+
+ORIGINAL MT TARGET:
+Und Johnsons Schwäche wird den 27 Staats- und Regierungschefs, denen er gegenübersteht, noch weniger Anreiz geben, entscheidende rote Linien zu streichen, trotz der Behauptung von Michael Gove, dem für einen No-Deal-Brexit zuständigen britischen Minister, dass sie sich beim Backstop „verschieben“.
+
+================================================================================
+CASE 7 | CURRENT | LOCAL 8 | GLOBAL 1066
+SYSTEM: eTranslation.737
+DOCUMENT: brisbanetimes.com.au.225989
+
+SOURCE:
+In an ideal world, a series of blows landing on Johnson - who is also under fire over his rhetoric in the debate over Brexit - would bring the match closer to an end. Europe should still try to extract maximum concessions from the UK, given it has no choice but to negotiate with the current government while trying to preserve unity among the rest of its 27 member states - which is going to get harder the longer this drags on. If there's a window to try yet again to put a deal before the UK parliament, the EU should grab it.
+
+ORIGINAL MT TARGET:
+In einer idealen Welt würde eine Reihe von Schlägen, die auf Johnson landen – der auch wegen seiner Rhetorik in der Debatte über den Brexit unter Beschuss steht – das Match dem Ende näher bringen. Europa sollte immer noch versuchen, dem Vereinigten Königreich maximale Zugeständnisse abzuringen, da es keine andere Wahl hat, als mit der aktuellen Regierung zu verhandeln und gleichzeitig zu versuchen, die Einheit unter den übrigen 27 Mitgliedstaaten zu wahren – was umso schwieriger wird, je länger sich dies hinzieht.
+
+================================================================================
+CASE 7 | NEXT | LOCAL 9 | GLOBAL 1067
+SYSTEM: eTranslation.737
+DOCUMENT: brisbanetimes.com.au.225989
+
+SOURCE:
+But this is more like a soccer match with 27 players on one side lining up to defend while the player in the opposite team tries to pick up the ball and go home.
+
+ORIGINAL MT TARGET:
+Aber das ist eher wie ein Fußballspiel mit 27 Spielern auf einer Seite, die sich anstellen, um zu verteidigen, während der Spieler in der anderen Mannschaft versucht, den Ball aufzunehmen und nach Hause zu gehen.
+
+================================================================================
+CASE 10 | PREVIOUS | LOCAL 5 | GLOBAL 65
+SYSTEM: OPPO.1535
+DOCUMENT: stv.tv.21636
+
+SOURCE:
+Ash Denham MSP said: ""We are holding two reviews into dog control legislation because we are absolutely determined to help keep communities safe from irresponsible owners and their out-of-control dogs.
+
+ORIGINAL MT TARGET:
+Ash Denham MSP sagte: „Wir führen zwei Überprüfungen der Hundekontrollgesetzgebung durch, weil wir absolut entschlossen sind, dazu beizutragen, Gemeinden vor unverantwortlichen Besitzern und ihren außer Kontrolle geratenen Hunden zu schützen.
+
+================================================================================
+CASE 10 | CURRENT | LOCAL 6 | GLOBAL 66
+SYSTEM: OPPO.1535
+DOCUMENT: stv.tv.21636
+
+SOURCE:
+This consultation seeks views on improvements on how the Control of Dogs Act 2010 can operate across Scotland, and next year we will take a wider look at all dog control legislation to assess whether changes are needed.
+
+ORIGINAL MT TARGET:
+„Diese Konsultation sucht Meinungen zu Verbesserungen, wie der Control of Dogs Act 2010 in ganz Schottland funktionieren kann, und nächstes Jahr werden wir einen umfassenderen Blick auf alle Hundekontrollgesetze werfen, um zu beurteilen, ob Änderungen erforderlich sind.
+
+================================================================================
+CASE 10 | NEXT | LOCAL 7 | GLOBAL 67
+SYSTEM: OPPO.1535
+DOCUMENT: stv.tv.21636
+
+SOURCE:
+Owning a dog brings with it certain responsibilities, including keeping your dog under effective control, and I encourage everyone with an interest in this area to respond to our consultation.""
+
+ORIGINAL MT TARGET:
+„Der Besitz eines Hundes bringt bestimmte Verantwortlichkeiten mit sich, einschließlich der effektiven Kontrolle Ihres Hundes, und ich ermutige alle, die an diesem Bereich interessiert sind, auf unsere Konsultation zu reagieren.“
