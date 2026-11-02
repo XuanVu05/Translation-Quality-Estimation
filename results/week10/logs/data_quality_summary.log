@@ -1,8 +1,5 @@
-2026-10-26 08:52:20,871 | INFO | Dataset shape: (79020, 9)
-2026-10-26 08:52:20,875 | INFO | Unique documents: 130
-2026-10-26 08:52:20,876 | INFO | Unique doc_id values: 26
-2026-10-26 08:52:20,886 | INFO | Unique doc-doc_id pairs: 1418
-2026-10-26 08:52:20,887 | INFO | Unique segment keys: 14180
-2026-10-26 08:52:20,887 | INFO | Segment anomalies: 12387
-2026-10-26 08:52:20,994 | INFO | Exact duplicate rows: 0
-2026-10-26 08:52:20,994 | INFO | Outputs saved to D:\Translation Quality Estimation\results\week10\data_quality
+2026-11-03 00:16:15,667 | INFO | Dataset shape: (79020, 9)
+2026-11-03 00:16:15,667 | INFO | Data quality overview: {'raw_annotation_rows': 79020, 'rows_with_valid_segment_keys': 79020, 'raw_systems': 10, 'raw_documents': 130, 'raw_segment_keys': 14180, 'mt_systems': 7, 'mt_annotation_rows': 61116, 'mt_segment_keys': 9926, 'missing_segment_key_rows': 0, 'missing_required_value_rows': 0, 'exact_duplicate_rows': 0, 'segments_not_three_raters': 1, 'segments_with_multiple_sources': 0, 'segments_with_multiple_targets': 12387, 'segments_flagged_as_anomalies': 1, 'rater_segment_groups': 42539}
+2026-11-03 00:16:15,667 | INFO | Exact duplicate rows: 0
+2026-11-03 00:16:15,667 | INFO | Multiple annotation rows per rater-segment groups: 17708
+2026-11-03 00:16:15,669 | INFO | Outputs saved to: D:\Translation-Quality-Estimation\results\week10\data_quality

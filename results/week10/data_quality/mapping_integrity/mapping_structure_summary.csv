@@ -1,0 +1,2 @@
+﻿mapping_rows,unique_line_ids,unique_documents,unique_document_segments,missing_value_rows,duplicate_line_id_rows,duplicate_document_segment_rows,testsets,language_pairs
+1418,1418,130,1418,0,0,0,newstest2020,en-de

@@ -1,0 +1,7 @@
+﻿check,passed
+seven_mt_systems_present,True
+expected_mt_segments,True
+all_mqm_rows_mapped,True
+seven_original_outputs_loaded,True
+all_original_outputs_have_1418_lines,True
+all_mqms_have_original_targets,True

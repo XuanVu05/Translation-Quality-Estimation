@@ -1,0 +1,11 @@
+﻿check,passed
+mapping_has_1418_rows,True
+mapping_has_no_missing_values,True
+mapping_line_ids_unique,True
+mapping_document_segment_unique,True
+mapping_line_ids_contiguous,True
+all_mt_segments_matched,True
+all_seven_systems_present,True
+each_system_has_1418_segments,True
+each_system_fully_matched,True
+all_documents_matched,True

@@ -1,0 +1,17 @@
+﻿metric,value
+raw_annotation_rows,79020
+rows_with_valid_segment_keys,79020
+raw_systems,10
+raw_documents,130
+raw_segment_keys,14180
+mt_systems,7
+mt_annotation_rows,61116
+mt_segment_keys,9926
+missing_segment_key_rows,0
+missing_required_value_rows,0
+exact_duplicate_rows,0
+segments_not_three_raters,1
+segments_with_multiple_sources,0
+segments_with_multiple_targets,12387
+segments_flagged_as_anomalies,1
+rater_segment_groups,42539
