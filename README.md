@@ -41,6 +41,7 @@ The exact license and redistribution conditions must be confirmed against the au
 - `analysis/`: Data-quality and MQM error-analysis scripts.
 - `experiments/`: Sensitivity analysis and system-identity experiments.
 - `results/week10/`: Week 10 experimental outputs and audit artifacts.
+- `results/week11/`: Week 11 MQM error-analysis scripts, 10-case qualitative audits, and neighbor-segment inspection outputs.
 
 Important result directories include:
 
@@ -51,6 +52,7 @@ Important result directories include:
 - `results/week10/error_analysis_dev/`: Development-set error-analysis outputs.
 - `results/week10/model_data/`: Prepared train, development, and test data.
 - `results/week10/logs/`: Existing audit and data-quality logs.
+- `results/week11/error_analysis_dev/`: Week 11 Dev top-20% MQM audit, status summary, and 10-case deep-dive analyses.
 
 ## 4. Data Splitting and Reproducibility
 
@@ -164,7 +166,37 @@ These results illustrate that a segment can receive no votes meeting the operati
 
 The analysis outputs are stored in `results/week10/error_analysis_dev/`.
 
-## 10. Limitations
+## 10. Week 11 Qualitative Error Analysis and MQM Audit
+
+Building upon the Week 10 mapping, Week 11 performs an in-depth qualitative and categorization audit on the 180 Dev segments ranked in the top 20% by `LR_Base` that received zero operational serious votes (`serious_votes = 0`, `y_primary = 0`).
+
+### 10.1. MQM Error Status Breakdown (180 Zero-Vote Segments)
+
+Cross-referencing all 180 candidate segments against raw annotations in `mqm_newstest2020_ende.tsv` shows that zero serious votes does not mean translation accuracy:
+
+| MQM Error Status | Segment Count | Percentage |
+| :--- | :---: | :---: |
+| Minor Error only | 149 | 82.78% |
+| No MQM Error Recorded | 29 | 16.11% |
+| Minor and Major Error (non-critical categories) | 2 | 1.11% |
+| **Total** | **180** | **100.0%** |
+
+- **83.89% (151/180)** of these segments actually contained human-annotated translation errors (149 Minor, 2 Major).
+- Only **16.11% (29/180)** received unanimous `No-error` evaluations across all three raters.
+- **Annotator disagreement** occurred in 78 out of 180 segments (43.33%), reflecting substantial subjective variance in non-critical error perception.
+- The two Major errors identified were `Style/Awkward` (Case 2) and `Fluency/Grammar` (Case 1), neither of which satisfies the operational critical-error definition (`Accuracy/*` or `Non-translation!` with $\ge 2$ rater votes).
+
+### 10.2. 10-Case In-Depth Qualitative Audit
+
+Ten representative false-positive cases were analyzed across 59 raw annotation rows, manual segment inspection, and neighbor-segment alignment:
+
+1. **Surface Formatting and Concatenation Artifacts:** Several translations contained missing spaces between German words (e.g., `Drogendeliktenangeklagt` in Case 2, `Körperzurückgeführt` in Case 6, `inihrer` in Case 9). These surface glitches strongly penalize length ratios, character n-grams, and vocabulary features, elevating model risk scores even when human annotators scored them as Minor or No-error.
+2. **Clause-Level Omissions:** In Cases 5 and 7, trailing clauses in the English source were omitted in the German MT output. Inspection of neighboring segments confirmed the omitted clauses did not shift across segment boundaries. In the raw MQM data, annotators either coded these as Minor omissions or lacked multi-rater consensus, preventing them from meeting the two-vote Major threshold.
+3. **Model Sensitivity to Sub-Critical Defects:** The model regularly flags genuine translation defects (fluency glitches, awkward phrasing, terminology mismatches, untranslated spans) that fall below the strict binary threshold required for an operational positive label.
+
+Audit outputs and scripts are located in `results/week11/error_analysis_dev/` and `analysis/`.
+
+## 11. Limitations
 
 - The positive label is an operational definition derived from MQM categories, severity, and annotator agreement; it is not universal ground truth.
 - Class imbalance affects model evaluation and motivates the use of ranking-oriented metrics such as PR-AUC, Recall@20%, Precision@20%, and Lift@20%.
@@ -175,10 +207,11 @@ The analysis outputs are stored in `results/week10/error_analysis_dev/`.
 - Historical logs do not establish conclusively whether Test results were examined during every earlier stage of model development.
 - Dataset licensing and redistribution permissions must be verified from the authoritative dataset documentation before redistribution.
 
-## 11. Main Artifacts
+## 12. Main Artifacts
 
-Key files for reproducing and auditing the Week 10 results include:
+Key files for reproducing and auditing the project results include:
 
+### Week 10 Artifacts
 - `results/week10/locked_split/manifest.json`
 - `results/week10/locked_split/qa_report.txt`
 - `results/week10/locked_split/document_assignments.csv`
@@ -194,5 +227,14 @@ Key files for reproducing and auditing the Week 10 results include:
 - `results/week10/error_analysis_dev/dev_top20_zero_vote_annotations.csv`
 - `results/week10/error_analysis_dev/dev_top20_zero_vote_summary.csv`
 - `results/week10/error_analysis_dev/dev_error_analysis_manifest.json`
+
+### Week 11 Artifacts
+- `results/week11/error_analysis_dev/dev_top20_error_analysis_summary.csv`
+- `results/week11/error_analysis_dev/dev_top20_error_analysis_status_summary.csv`
+- `results/week11/error_analysis_dev/mqm_10_cases_audit/mqm_10_cases_audit_report.txt`
+- `results/week11/error_analysis_dev/final_10_case_analysis/dev_10_case_summary.csv`
+- `results/week11/error_analysis_dev/final_10_case_analysis/final_10_case_qualitative_evidence.csv`
+- `analysis/audit_mqm_10_cases.py`
+- `analysis/build_final_qualitative_evidence.py`
 
 File availability may depend on the current working tree. Generated artifacts should be checked before claiming that a particular experiment is fully reproducible from a clean checkout.
