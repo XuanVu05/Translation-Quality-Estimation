@@ -1,0 +1,21 @@
+category,count
+Accuracy/Mistranslation,21185
+No-error,14038
+Fluency/Punctuation,12302
+Style/Awkward,10280
+Fluency/Grammar,6696
+Terminology/Inappropriate for context,5553
+Accuracy/Omission,2452
+Accuracy/Untranslated text,1967
+Fluency/Spelling,1612
+Accuracy/Addition,1424
+Fluency/Register,430
+Other,338
+Terminology/Inconsistent use of terminology,236
+Locale convention/Currency format,205
+Non-translation!,105
+Fluency/Inconsistency,90
+Fluency/Character encoding,63
+Locale convention/Address format,17
+Locale convention/Date format,14
+Locale convention/Time format,13

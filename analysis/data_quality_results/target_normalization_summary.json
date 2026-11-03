@@ -1,0 +1,35 @@
+{
+    "n_system_segments": 14180,
+    "raw_variant_distribution": {
+        "1": 1793,
+        "2": 2424,
+        "3": 2487,
+        "4": 2056,
+        "5": 1485,
+        "6": 1158,
+        "7": 853,
+        "8": 577,
+        "9": 455,
+        "10": 311,
+        "11": 236,
+        "12": 156,
+        "13": 94,
+        "14": 63,
+        "15": 26,
+        "16": 6
+    },
+    "normalized_variant_distribution": {
+        "1": 11447,
+        "2": 2194,
+        "3": 413,
+        "4": 95,
+        "5": 20,
+        "6": 9,
+        "7": 2
+    },
+    "variant_status_counts": {
+        "Markup-only variation": 9654,
+        "Content variation": 2733,
+        "No variation": 1793
+    }
+}

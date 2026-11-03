@@ -1,0 +1,84 @@
+{
+    "overall": {
+        "mqm_rows": 79020,
+        "matched_mqm_rows": 79020,
+        "unmatched_mqm_rows": 0,
+        "mt_systems_checked": 7,
+        "total_mt_system_segments": 9926,
+        "all_match_segments": 7838,
+        "some_match_segments": 2072,
+        "none_match_segments": 16
+    },
+    "by_system": [
+        {
+            "system": "eTranslation.737",
+            "original_lines": 1418,
+            "mqm_segments": 1418,
+            "all_match_segments": 1134,
+            "some_match_segments": 284,
+            "none_match_segments": 0,
+            "all_match_rate": 0.7997179125528914,
+            "any_match_rate": 1.0
+        },
+        {
+            "system": "Huoshan_Translate.832",
+            "original_lines": 1418,
+            "mqm_segments": 1418,
+            "all_match_segments": 1118,
+            "some_match_segments": 299,
+            "none_match_segments": 1,
+            "all_match_rate": 0.7884344146685472,
+            "any_match_rate": 0.9992947813822285
+        },
+        {
+            "system": "Online-A.1574",
+            "original_lines": 1418,
+            "mqm_segments": 1418,
+            "all_match_segments": 1064,
+            "some_match_segments": 351,
+            "none_match_segments": 3,
+            "all_match_rate": 0.7503526093088858,
+            "any_match_rate": 0.9978843441466855
+        },
+        {
+            "system": "Online-B.1590",
+            "original_lines": 1418,
+            "mqm_segments": 1418,
+            "all_match_segments": 1067,
+            "some_match_segments": 348,
+            "none_match_segments": 3,
+            "all_match_rate": 0.7524682651622003,
+            "any_match_rate": 0.9978843441466855
+        },
+        {
+            "system": "OPPO.1535",
+            "original_lines": 1418,
+            "mqm_segments": 1418,
+            "all_match_segments": 1173,
+            "some_match_segments": 241,
+            "none_match_segments": 4,
+            "all_match_rate": 0.8272214386459803,
+            "any_match_rate": 0.997179125528914
+        },
+        {
+            "system": "Tencent_Translation.1520",
+            "original_lines": 1418,
+            "mqm_segments": 1418,
+            "all_match_segments": 1149,
+            "some_match_segments": 267,
+            "none_match_segments": 2,
+            "all_match_rate": 0.810296191819464,
+            "any_match_rate": 0.998589562764457
+        },
+        {
+            "system": "Tohoku-AIP-NTT.890",
+            "original_lines": 1418,
+            "mqm_segments": 1418,
+            "all_match_segments": 1133,
+            "some_match_segments": 282,
+            "none_match_segments": 3,
+            "all_match_rate": 0.7990126939351199,
+            "any_match_rate": 0.9978843441466855
+        }
+    ]
+}
