@@ -1,0 +1,66 @@
+MLA PROJECT - G3 ENVIRONMENT EVIDENCE
+
+===== DATE =====
+2026-11-03 23:10:25 +07:00
+
+===== PYTHON =====
+Python 3.13.18
+
+===== PIP =====
+pip 26.2.2 from D:\Translation-Quality-Estimation\.venv_mla\Lib\site-packages\pip (python 3.13)
+
+
+===== PACKAGE VERSIONS =====
+cloudpickle==3.1.2
+joblib==1.6.0
+narwhals==2.28.0
+numpy==2.5.4
+packaging==26.3
+pandas==3.1.0
+psutil==7.2.2
+python-dateutil==4.0.0
+scikit-learn==1.9.1
+scipy==1.18.1
+setuptools==84.2.1
+threadpoolctl==3.7.0
+tzdata==2026.6
+wheel==0.48.0
+
+===== GIT STATUS =====
+ M results/week10/data_quality/source_variants_by_segment.csv
+?? analysis/audit_annotation_structure.py
+?? analysis/audit_data_quality.py
+?? analysis/audit_target_normalization.py
+?? analysis/audit_variants_by_system.py
+?? analysis/compare_mqm_with_original_mt.py
+?? analysis/data_quality_results/
+?? analysis/inspect_mqm_original_mismatches.py
+?? analysis/inspect_remaining_variants.py
+?? reports/G1_completion_summary.md
+?? reports/G2_experimental_evaluation_report.md
+?? reports/G3_environment_evidence.txt
+?? reports/data_leakage_audit.md
+?? reports/data_quality_audit.md
+?? reports/feature_provenance_audit.md
+?? reports/label_definition_audit.md
+?? reports/phase_log_and_handoff.md
+
+===== GIT HISTORY =====
+2f4a9ee Add reproducible MLA Python environment
+ad04c53 Add dataset provenance and license audit
+ae2f580 Giai đoạn 1 – Audit dữ liệu và phương pháp
+cc9c420 Update README.md with Week 11 MQM qualitative error analysis and audit results
+da255e9 Add Week 11 MQM qualitative error analysis scripts and 10-case audit artifacts
+
+===== REQUIREMENTS SHA256 =====
+
+
+Algorithm : SHA256
+Hash      : A6B946F0B69D5AB095FEB419E6F0EE1EBD6CD0FDCC
+            45FC0D2568C665F54922F8
+Path      : D:\Translation-Quality-Estimation\requirem
+            ents.txt
+
+
+
+

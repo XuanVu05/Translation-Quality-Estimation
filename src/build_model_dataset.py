@@ -82,7 +82,8 @@ source_audit = (
     .reset_index()
 )
 source_audit.to_csv(
-    AUDIT_DIR / "source_variants_by_segment.csv", index=False
+    AUDIT_DIR / "model_source_variants_by_segment.csv",
+    index=False
 )
 
 source_rows = (
