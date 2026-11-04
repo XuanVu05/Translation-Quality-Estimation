@@ -230,7 +230,7 @@ The analysis therefore uses target-matched annotations as the primary evidence a
 
 Cases 3–9 represent seven MT system outputs for one source segment. This enables a useful comparison of system-specific translation behavior, but does not provide seven independent source-level observations.
 
-The ten cases correspond to four unique source segments: one in Case 1, one in Case 2, one shared by Cases 3–9, and one in Case 10.
+The ten cases correspond to five unique source segments across four source documents: Case 1, Case 2, the segment shared by Cases 3, 4, 6, 7, 8 and 9, Case 5, and Case 10.
 
 ## 5. Implications for the Second Pair of Eyes system
 

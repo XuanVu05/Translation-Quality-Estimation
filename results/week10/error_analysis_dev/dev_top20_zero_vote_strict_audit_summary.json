@@ -1,0 +1,24 @@
+{
+  "input": "results\\week10\\error_analysis_dev\\dev_top20_zero_vote_annotations.csv",
+  "candidate_annotation_rows": 959,
+  "target_matched_annotation_rows": 893,
+  "target_unmatched_annotation_rows": 66,
+  "unique_segments": 180,
+  "strict_status_distribution": {
+    "Minor_Error": 149,
+    "No_MQM_Error_Recorded": 30,
+    "Minor_and_Major_Error": 1
+  },
+  "annotator_disagreement_segments": 77,
+  "annotator_disagreement_rate": 0.42777777777777776,
+  "rater_count_distribution": {
+    "3": 163,
+    "2": 14,
+    "1": 3
+  },
+  "disagreement_definition": "A segment is marked as disagreement when at least one matched rater has a Minor/Major annotation and at least one matched rater has a No-error annotation.",
+  "outputs": [
+    "results\\week10\\error_analysis_dev\\dev_top20_zero_vote_strict_segment_audit.csv",
+    "results\\week10\\error_analysis_dev\\dev_top20_zero_vote_strict_rater_audit.csv"
+  ]
+}
