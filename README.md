@@ -160,58 +160,102 @@ The Dev error analysis examines examples ranked in the top 20% by `LR_Base` that
 
 Normalization removes `<v>` markup, applies Unicode NFKC normalization, and collapses whitespace.
 
-The matching annotation rows include Minor, No-error, Neutral, and one Major annotation. The Major annotation is `Style/Awkward`, which falls outside the project's positive-label definition and was not supported by two annotators at Major severity.
+The matched annotation rows include Minor, No-error, Neutral, and one Major annotation. The Major annotation is `Style/Awkward`, which falls outside the project's positive-label definition.
 
-These results illustrate that a segment can receive no votes meeting the operational critical-error criteria while still having other MQM annotations. Consequently, zero serious votes must not be interpreted as proof that a translation is error-free. Annotation-row counts also must not be treated as independent segment counts.
+These results demonstrate that a segment can receive zero votes meeting the operational critical-error criteria while still having other MQM annotations. Therefore, zero serious votes must not be interpreted as proof that a translation is error-free. Annotation-row counts must also not be treated as independent segment counts.
 
 The analysis outputs are stored in `results/week10/error_analysis_dev/`.
 
 ## 10. Week 11 Qualitative Error Analysis and MQM Audit
 
-Building upon the Week 10 mapping, Week 11 performs an in-depth qualitative and categorization audit on the 180 Dev segments ranked in the top 20% by `LR_Base` that received zero operational serious votes (`serious_votes = 0`, `y_primary = 0`).
+Week 11 extends the Dev error analysis through a strict target-matching audit and a focused qualitative examination of ten high-ranked non-critical predictions. The analysis uses the existing Dev predictions and does not involve model retraining or Test-set case selection.
 
-### 10.1. MQM Error Status Breakdown (180 Zero-Vote Segments)
+### 10.1. Strict MQM Status Audit of 180 Zero-Vote Segments
 
-Cross-referencing all 180 candidate segments against raw annotations in `mqm_newstest2020_ende.tsv` shows that zero serious votes does not mean translation accuracy:
+The audit examined 180 Dev segments ranked in the top 20% by `LR_Base` that had zero operational serious votes (`serious_votes = 0`, `y_primary = 0`).
 
-| MQM Error Status | Segment Count | Percentage |
-| :--- | :---: | :---: |
-| Minor Error only | 149 | 82.78% |
-| No MQM Error Recorded | 29 | 16.11% |
-| Minor and Major Error (non-critical categories) | 2 | 1.11% |
-| **Total** | **180** | **100.0%** |
+A total of 959 candidate annotation rows were retrieved. After target normalization and matching:
 
-- **83.89% (151/180)** of these segments actually contained human-annotated translation errors (149 Minor, 2 Major).
-- Only **16.11% (29/180)** received unanimous `No-error` evaluations across all three raters.
-- **Annotator disagreement** occurred in 78 out of 180 segments (43.33%), reflecting substantial subjective variance in non-critical error perception.
-- The two Major errors identified were `Style/Awkward` (Case 2) and `Fluency/Grammar` (Case 1), neither of which satisfies the operational critical-error definition (`Accuracy/*` or `Non-translation!` with $\ge 2$ rater votes).
+- Matched annotation rows: 893.
+- Unmatched annotation rows: 66 (6.88% of candidate rows).
+- Unmatched segment keys: 0.
 
-### 10.2. 10-Case In-Depth Qualitative Audit
+The strict target-matched status distribution is:
 
-Ten representative false-positive cases were analyzed across 59 raw annotation rows, manual segment inspection, and neighbor-segment alignment:
+| MQM Error Status      | Segment Count | Percentage  |
+| :-------------------- | :-----------: | :---------: |
+| Minor Error only      |      149      |   82.78%    |
+| No MQM Error Recorded |      30       |   16.67%    |
+| Minor and Major Error |       1       |    0.56%    |
+| **Total**             |    **180**    | **100.00%** |
 
-1. **Surface Formatting and Concatenation Artifacts:** Several translations contained missing spaces between German words (e.g., `Drogendeliktenangeklagt` in Case 2, `Körperzurückgeführt` in Case 6, `inihrer` in Case 9). These surface glitches strongly penalize length ratios, character n-grams, and vocabulary features, elevating model risk scores even when human annotators scored them as Minor or No-error.
-2. **Clause-Level Omissions:** In Cases 5 and 7, trailing clauses in the English source were omitted in the German MT output. Inspection of neighboring segments confirmed the omitted clauses did not shift across segment boundaries. In the raw MQM data, annotators either coded these as Minor omissions or lacked multi-rater consensus, preventing them from meeting the two-vote Major threshold.
-3. **Model Sensitivity to Sub-Critical Defects:** The model regularly flags genuine translation defects (fluency glitches, awkward phrasing, terminology mismatches, untranslated spans) that fall below the strict binary threshold required for an operational positive label.
+Thus, 150/180 segments (83.33%) had at least one matched non-critical MQM error annotation. This does not mean that all 150 segments contain critical errors under the project's operational label definition.
 
-Audit outputs and scripts are located in `results/week11/error_analysis_dev/` and `analysis/`.
+The audit identified annotator disagreement in 77/180 segments (42.78%). Rater coverage was not uniform: 163 segments had three raters, 14 had two raters, and 3 had one rater. Therefore, the 30 segments with no MQM error recorded must not be described as unanimous three-rater No-error cases.
+
+For comparison, the earlier broad segment-key aggregation produced 149 Minor-only, 29 No-error, and 2 Minor-and-Major cases, with 78 segments showing disagreement. These broad counts are not the primary results because the strict target-matched audit provides a more conservative basis for interpreting the annotations.
+
+The 66 unmatched annotation rows represent row-level target mismatches, not 66 unmatched segments. All 180 selected segment keys had at least one matched annotation.
+
+### 10.2. Ten-Case Qualitative Audit
+
+Ten high-ranked Dev examples were selected from `LR_Base` predictions. All ten had `y_primary = 0`; they are therefore described as high-ranked non-critical cases or zero-vote cases, rather than confirmed false positives.
+
+The audit produced the following evidence:
+
+- Ten selected cases.
+- 47 candidate MQM annotation rows.
+- 42 target-matched annotation rows.
+- 5 target-unmatched annotation rows.
+- All ten cases had at least one matched annotation.
+- All ten cases had zero recomputed serious votes.
+- The ten cases represent five unique source segments across four documents.
+
+Six of the ten cases (Cases 3, 4, 6, 7, 8, and 9) correspond to different MT systems translating the same source segment. They must not be interpreted as six independent source-level examples.
+
+Two cases illustrate why MQM category and target matching matter:
+
+1. **Online-B, abcnews, document 5, segment 1317:** The case had 11 candidate annotation rows, of which 6 matched and 5 did not. A Major annotation occurred among the unmatched rows; the matched annotations were Minor. The unmatched Major annotation is therefore not used as evidence of a matched critical error for this case.
+2. **eTranslation, standard.co.uk, document 1, segment 1386:** The three candidate annotation rows matched. The Major annotation was categorized as `Style/Awkward`, which is outside the project's operational critical-error categories.
+
+The cases illustrate that high model rankings can occur in examples with non-critical MQM annotations, annotation mismatches, and repeated source content across MT systems. A Major severity label alone does not establish a positive operational label; category, target matching, and the multi-rater rule also matter.
+
+This is a focused, non-random sample of zero-vote Dev cases. The qualitative interpretations were produced by the project team and are not expert adjudications. No positive-label cases were included in this ten-case sample. The findings therefore do not establish how the model behaves across all error types or all critical-error cases.
+
+The current audit outputs are stored in `results/week11/error_analysis_dev/current_10_case_analysis/`.
+
+### 10.3. Interpretation
+
+The quantitative and qualitative audits support three cautious conclusions:
+
+- Zero operational serious votes do not imply that a translation has no MQM annotations or no translation-quality issues.
+- MQM severity must be interpreted together with category, target matching, and annotator agreement.
+- A ranking model may assign high scores to examples with non-critical defects. This is relevant to the intended review-prioritization workflow, but the present analysis does not establish that every high-ranked case is a critical error or that the model is operationally superior at the fixed review budget.
+
+The analysis is limited by the non-random selection of cases, the small number of unique source segments, repeated translations of the same source segment across systems, annotation mismatches, and the absence of positive cases in the ten-case qualitative sample.
 
 ## 11. Limitations
 
-- The positive label is an operational definition derived from MQM categories, severity, and annotator agreement; it is not universal ground truth.
-- Class imbalance affects model evaluation and motivates the use of ranking-oriented metrics such as PR-AUC, Recall@20%, Precision@20%, and Lift@20%.
-- The Test set contains only 20 documents, so document-cluster uncertainty estimates may be wide.
-- The ablation results are Dev point estimates and do not establish statistical significance.
-- Logistic Regression's higher Test PR-AUC does not establish a clear improvement in positive-error discovery at the fixed review budget.
-- The Dev and Test Random baselines use different random-ranking conventions.
-- Historical logs do not establish conclusively whether Test results were examined during every earlier stage of model development.
-- Dataset licensing and redistribution permissions must be verified from the authoritative dataset documentation before redistribution.
+- **Operational label:** The positive label is derived from MQM categories, severity, and annotator agreement. It is an operational definition, not universal ground truth.
+- **Annotation uncertainty:** Annotator disagreement and target-matching limitations affect the interpretation of MQM labels. Zero serious votes must not be interpreted as proof of error-free translation.
+- **Class imbalance:** The positive class is a minority of the dataset. Ranking-oriented metrics such as PR-AUC, Recall@20%, Precision@20%, and Lift@20% are therefore reported alongside other metrics.
+- **Test sample size:** The Test set contains 20 documents. Document-cluster bootstrap intervals may consequently be wide and should be interpreted cautiously.
+- **Model comparison:** Logistic Regression achieves the highest Test PR-AUC among the evaluated approaches. However, the paired document-cluster bootstrap confidence intervals for the differences in the top-20% operational metrics include zero. The results do not establish clear operational superiority at the fixed review budget.
+- **Ablation scope:** System-identity ablation results are Dev point estimates and do not establish statistical significance or generalization to unseen MT systems.
+- **Random baseline protocol:** The Dev Random baseline is averaged over 100 seeds (42–141), whereas the Test Random baseline uses a single seed (20261026). Their values should not be interpreted as directly equivalent estimates.
+- **Test exposure:** The Test set is recorded as `candidate_locked`. The available verification confirms consistency of stored split artifacts, hashes, and document assignments; it does not establish that Test results were never inspected during earlier project development.
+- **Domain scope:** The experiments use WMT 2020 English-to-German data from seven MT systems. Generalization to other language pairs, datasets, domains, or unseen systems has not been established.
+- **Qualitative analysis:** The ten-case analysis is non-random, contains only zero-vote cases, and includes repeated source content across systems. The interpretations are project-team assessments rather than expert adjudication.
+- **Reproducibility scope:** The reproduction checks were performed in a separate sandbox on the same machine, not on an independently configured computer or operating system.
+- **Ablation provenance:** The ablation outputs were rerun and their contents matched the supplied results, but the provenance of separately stored copies is not independently established.
+- **Licensing:** The repository-level Apache 2.0 license must not be interpreted as automatically granting unrestricted redistribution rights for every third-party dataset component. Dataset-specific terms should be checked before redistribution.
 
 ## 12. Main Artifacts
 
 Key files for reproducing and auditing the project results include:
 
 ### Week 10 Artifacts
+
 - `results/week10/locked_split/manifest.json`
 - `results/week10/locked_split/qa_report.txt`
 - `results/week10/locked_split/document_assignments.csv`
@@ -229,12 +273,34 @@ Key files for reproducing and auditing the project results include:
 - `results/week10/error_analysis_dev/dev_error_analysis_manifest.json`
 
 ### Week 11 Artifacts
+
+**Quantitative Dev error analysis**
+
+- `results/week11/error_analysis_dev/dev_top20_error_analysis.csv`
 - `results/week11/error_analysis_dev/dev_top20_error_analysis_summary.csv`
 - `results/week11/error_analysis_dev/dev_top20_error_analysis_status_summary.csv`
-- `results/week11/error_analysis_dev/mqm_10_cases_audit/mqm_10_cases_audit_report.txt`
-- `results/week11/error_analysis_dev/final_10_case_analysis/dev_10_case_summary.csv`
-- `results/week11/error_analysis_dev/final_10_case_analysis/final_10_case_qualitative_evidence.csv`
-- `analysis/audit_mqm_10_cases.py`
-- `analysis/build_final_qualitative_evidence.py`
+- `results/week11/error_analysis_dev/dev_top20_error_analysis_rater_detail.csv`
+- `results/week11/error_analysis_dev/dev_top20_error_analysis_unmatched.csv`
 
-File availability may depend on the current working tree. Generated artifacts should be checked before claiming that a particular experiment is fully reproducible from a clean checkout.
+**Current ten-case analysis**
+
+- `results/week11/error_analysis_dev/current_10_case_analysis/current_10_cases.csv`
+- `results/week11/error_analysis_dev/current_10_case_analysis/current_10_case_audit_report.md`
+- `results/week11/error_analysis_dev/current_10_case_analysis/current_10_case_audit_summary.csv`
+- `results/week11/error_analysis_dev/current_10_case_analysis/current_10_case_matched_annotations.csv`
+- `results/week11/error_analysis_dev/current_10_case_analysis/current_10_case_unmatched_annotations.csv`
+- `results/week11/error_analysis_dev/current_10_case_analysis/current_10_case_qualitative_evidence.csv`
+- `results/week11/error_analysis_dev/current_10_case_analysis/current_10_case_evidence_manifest.csv`
+
+**Research and verification reports**
+
+- `reports/G4_1_qualitative_error_analysis.md`
+- `reports/G4_2_error_analysis_synthesis.md`
+- `reports/G3_6_bao_cao_tong_ket_tinh_tai_lap.md`
+- `reports/strict_split_verification_20261104.txt`
+
+The strict split verification log records 37 successful checks, including source and snapshot hash consistency, split-file integrity, document assignments, and the absence of document overlap across Train, Dev, and Test.
+
+The current ten-case directory is the primary source for the Week 11 qualitative case analysis. Older directories such as `final_10_case_analysis/` and `mqm_10_cases_audit/` are retained as historical or supplementary audit artifacts and should not be treated as substitutes for the current analysis.
+
+File availability may depend on the current working tree. The verification log establishes consistency of the checked artifacts, not a clean-machine reproduction or proof that the Test set was never inspected.

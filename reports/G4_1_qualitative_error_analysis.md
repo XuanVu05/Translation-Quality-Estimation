@@ -95,19 +95,18 @@ This case demonstrates that severity alone is insufficient to determine whether 
 
 **Interpretation:** A stylistic issue with one Major annotation, but no operational Critical Error.
 
-### Cases 3–9 – Seven MT systems translating the same source segment
+### Cases 3, 4, 6, 7, 8 and 9 – Six MT systems translating the same source segment
 
 **Source**
 
 "Allen's family pays nearly $12,000 per year for Amari to attend the school, which made headlines earlier this year after Karen Pence took an art teaching job at the famously anti-LGBTQ institution."
 
-These seven cases correspond to the same source document and segment, `cbsnews.302129`, `doc_id=10`, `seg_id=763`, but have different MT systems and outputs.
+These six cases correspond to the same source document and segment, `cbsnews.302129`, `doc_id=10`, `seg_id=763`, but have different MT systems and outputs.
 
 | Case | MT system                | LR_Base rank | Matched MQM evidence                  |
 | ---: | ------------------------ | -----------: | ------------------------------------- |
 |    3 | Online-B.1590            |            3 | Minor Style, Minor Accuracy, No-error |
 |    4 | OPPO.1535                |            6 | Minor Fluency, Accuracy and Style     |
-|    5 | Online-B.1590            |            8 | Minor Fluency, Accuracy and Style     |
 |    6 | Huoshan_Translate.832    |            9 | Minor Fluency, Accuracy and Style     |
 |    7 | eTranslation.737         |           10 | Minor Fluency, Accuracy and Style     |
 |    8 | Tencent_Translation.1520 |           11 | Minor Fluency, Accuracy and Style     |
@@ -228,7 +227,7 @@ The analysis therefore uses target-matched annotations as the primary evidence a
 
 ### 4.5 Repeated source segments require careful counting
 
-Cases 3–9 represent seven MT system outputs for one source segment. This enables a useful comparison of system-specific translation behavior, but does not provide seven independent source-level observations.
+Cases 3, 4, 6, 7, 8 and 9 represent six MT system outputs for one source segment. This enables a useful comparison of system-specific translation behavior, but does not provide six independent source-level observations.
 
 The ten cases correspond to five unique source segments across four source documents: Case 1, Case 2, the segment shared by Cases 3, 4, 6, 7, 8 and 9, Case 5, and Case 10.
 
