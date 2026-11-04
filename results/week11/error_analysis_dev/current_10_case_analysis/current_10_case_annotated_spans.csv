@@ -1,0 +1,43 @@
+﻿case,system,doc,doc_id,seg_id,rater,category,severity,annotated_span,span_count
+1,Online-B.1590,abcnews.363994,5,1317,rater5,Accuracy/Mistranslation,Minor, Man,1
+1,Online-B.1590,abcnews.363994,5,1317,rater5,Accuracy/Mistranslation,Minor,konfrontiert,1
+1,Online-B.1590,abcnews.363994,5,1317,rater6,Style/Awkward,Minor,Walmart-Geschäft,1
+1,Online-B.1590,abcnews.363994,5,1317,rater6,Accuracy/Mistranslation,Minor,Klientin,1
+1,Online-B.1590,abcnews.363994,5,1317,rater6,Accuracy/Mistranslation,Minor,unterstützt,1
+1,Online-B.1590,abcnews.363994,5,1317,rater6,Accuracy/Mistranslation,Minor,Man ,1
+2,eTranslation.737,standard.co.uk.14516,1,1386,rater3,Style/Awkward,Minor,Mac-Miller-Tod,1
+2,eTranslation.737,standard.co.uk.14516,1,1386,rater4,Style/Awkward,Major,Mac-Miller-Tod,1
+2,eTranslation.737,standard.co.uk.14516,1,1386,rater5,Style/Awkward,Minor,Mac-Miller-Tod,1
+3,Online-B.1590,cbsnews.302129,10,763,rater1,Style/Awkward,Minor,durch,1
+3,Online-B.1590,cbsnews.302129,10,763,rater2,Accuracy/Mistranslation,Minor,was ,1
+3,Online-B.1590,cbsnews.302129,10,763,rater2,Accuracy/Mistranslation,Minor,durch ,1
+3,Online-B.1590,cbsnews.302129,10,763,rater5,No-error,no-error,,0
+4,OPPO.1535,cbsnews.302129,10,763,rater1,Fluency/Grammar,Minor, um,1
+4,OPPO.1535,cbsnews.302129,10,763,rater2,Accuracy/Mistranslation,Minor,was ,1
+4,OPPO.1535,cbsnews.302129,10,763,rater2,Style/Awkward,Minor,um die Schule zu besuchen,1
+4,OPPO.1535,cbsnews.302129,10,763,rater5,Style/Awkward,Minor,um die Schule zu besuchen,1
+5,Online-B.1590,cbsnews.302129,5,758,rater1,Fluency/Grammar,Minor,zu,1
+5,Online-B.1590,cbsnews.302129,5,758,rater2,Accuracy/Mistranslation,Minor,eine Schere zu ihren Dreadlocks nahm,1
+5,Online-B.1590,cbsnews.302129,5,758,rater2,Accuracy/Mistranslation,Minor,hielt ,1
+5,Online-B.1590,cbsnews.302129,5,758,rater5,Style/Awkward,Minor,zu ihren Dreadlocks nahm,1
+5,Online-B.1590,cbsnews.302129,5,758,rater5,Style/Awkward,Minor,bedeckte ,1
+6,Huoshan_Translate.832,cbsnews.302129,10,763,rater1,Fluency/Grammar,Minor,um,1
+6,Huoshan_Translate.832,cbsnews.302129,10,763,rater2,Accuracy/Mistranslation,Minor,was ,1
+6,Huoshan_Translate.832,cbsnews.302129,10,763,rater2,Style/Awkward,Minor,um die Schule zu besuchen,1
+6,Huoshan_Translate.832,cbsnews.302129,10,763,rater5,Style/Awkward,Minor,um die Schule zu besuchen,1
+7,eTranslation.737,cbsnews.302129,10,763,rater1,Fluency/Grammar,Minor,um,1
+7,eTranslation.737,cbsnews.302129,10,763,rater2,Accuracy/Mistranslation,Minor,was ,1
+7,eTranslation.737,cbsnews.302129,10,763,rater2,Style/Awkward,Minor,um die Schule zu besuchen,1
+7,eTranslation.737,cbsnews.302129,10,763,rater5,Style/Awkward,Minor,um die Schule zu besuchen,1
+8,Tencent_Translation.1520,cbsnews.302129,10,763,rater1,Fluency/Grammar,Minor,um,1
+8,Tencent_Translation.1520,cbsnews.302129,10,763,rater2,Accuracy/Mistranslation,Minor,was ,1
+8,Tencent_Translation.1520,cbsnews.302129,10,763,rater2,Style/Awkward,Minor,um ,1
+8,Tencent_Translation.1520,cbsnews.302129,10,763,rater5,Style/Awkward,Minor,"für Amari, um ",1
+9,Online-A.1574,cbsnews.302129,10,763,rater1,Fluency/Grammar,Minor,um,1
+9,Online-A.1574,cbsnews.302129,10,763,rater2,Accuracy/Mistranslation,Minor,Kunstlehrjob ,1
+9,Online-A.1574,cbsnews.302129,10,763,rater2,Style/Awkward,Minor,um die Schule zu besuchen,1
+9,Online-A.1574,cbsnews.302129,10,763,rater5,Style/Awkward,Minor,"für Amari, um die Schule zu besuchen",1
+10,Huoshan_Translate.832,seattle_times.7755,4,38,rater2,Style/Awkward,Minor,Teams ,1
+10,Huoshan_Translate.832,seattle_times.7755,4,38,rater3,No-error,no-error,,0
+10,Huoshan_Translate.832,seattle_times.7755,4,38,rater3,Style/Awkward,Neutral,gespielt,1
+10,Huoshan_Translate.832,seattle_times.7755,4,38,rater5,No-error,no-error,,0
