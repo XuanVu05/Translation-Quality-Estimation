@@ -78,7 +78,8 @@ The snapshot has been validated against the current split source. Its recorded s
 - Keep the original dataset unchanged.
 - Run scripts from the project root unless otherwise specified.
 - Preserve the split snapshot, predictions, metrics, manifests, and audit notes.
-- Fit learned preprocessing components on Train only; evaluate model choices on Dev.
+- For Dev evaluation, fit learned preprocessing components on Train and transform Dev using the fitted components.
+- For final Test evaluation, refit the selected pipeline on Train + Dev and transform Test.
 - Use Test for final evaluation and avoid further model selection based on Test results.
 - Record seeds, input files, configurations, and output paths for new experiments.
 
@@ -91,7 +92,7 @@ The current Week 10 comparison includes:
 3. **Logistic Regression:** Uses TF-IDF representations of source and target text together with 12 surface features.
 4. **Linear SVM:** Uses the same general feature representation as Logistic Regression.
 
-The classical machine-learning models use balanced class weights. TF-IDF vectorizers and feature scaling are fitted using Train data, while Dev is used for development-set comparisons.
+The classical machine-learning models use balanced class weights. For Dev evaluation, TF-IDF vectorizers and feature scaling are fitted on Train. For final Test evaluation, the selected pipeline is refitted on Train + Dev before transforming Test.
 
 ### Random-baseline conventions
 
@@ -119,7 +120,7 @@ Based on the current Dev point estimates and the project's prioritization object
 
 ## 7. Test-Set Evaluation
 
-The locked Test set contains 1,575 examples from 20 documents, including 162 positive examples. The positive prevalence is approximately 10.29%. At a 20% review budget, 315 examples are selected.
+The held-out Test evaluation set (recorded status: `candidate_locked`) contains 1,575 examples from 20 documents, including 162 positive examples. The positive prevalence is approximately 10.29%. At a 20% review budget, 315 examples are selected.
 
 | Model               | PR-AUC | Precision@20% | Recall@20% | Lift@20% | MCC@20% |
 | ------------------- | -----: | ------------: | ---------: | -------: | ------: |
@@ -187,7 +188,9 @@ The strict target-matched status distribution is:
 | Minor Error only      |      149      |   82.78%    |
 | No MQM Error Recorded |      30       |   16.67%    |
 | Minor and Major Error |       1       |    0.56%    |
-| **Total**             |    **180**    | **100.00%** |
+| **Total**             |    **180**    | **100.01%** |
+
+*Percentages may not sum to exactly 100% because of rounding.*
 
 Thus, 150/180 segments (83.33%) had at least one matched non-critical MQM error annotation. This does not mean that all 150 segments contain critical errors under the project's operational label definition.
 

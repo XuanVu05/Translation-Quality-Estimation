@@ -48,3 +48,23 @@ Thumbs.db
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+.venv_mla/
+venv/
+
+# IDE
+.vscode/
+
+# Temporary files
+*.tmp
+*.log
+
+# Local audit and backup
+_PROJECT_AUDIT/
+archive/
+project_code_audit.zip
