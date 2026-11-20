@@ -1,0 +1,16 @@
+﻿rater_a,rater_b,shared_segments,same_votes,different_votes,raw_agreement_pct
+rater1,rater2,2191,1797,394,82.02
+rater1,rater3,1701,1296,405,76.19
+rater1,rater4,1960,1735,225,88.52
+rater1,rater5,2023,1691,332,83.59
+rater1,rater6,2107,1819,288,86.33
+rater2,rater3,1666,1367,299,82.05
+rater2,rater4,1974,1577,397,79.89
+rater2,rater5,1701,1353,348,79.54
+rater2,rater6,2030,1771,259,87.24
+rater3,rater4,2149,1708,441,79.48
+rater3,rater5,2219,1705,514,76.84
+rater3,rater6,2135,1698,437,79.53
+rater4,rater5,2086,1635,451,78.38
+rater4,rater6,1757,1380,377,78.54
+rater5,rater6,2079,1688,391,81.19

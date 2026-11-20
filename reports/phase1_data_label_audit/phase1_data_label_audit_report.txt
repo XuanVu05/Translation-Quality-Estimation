@@ -1,0 +1,74 @@
+PHASE 1 – DATA AND LABEL AUDIT
+========================================================================
+Selected segment key: {'system': 'Huoshan_Translate.832', 'doc': 'abcnews.363994', 'doc_id': '4', 'seg_id': '1316'}
+MQM annotation rows for selected segment: 6
+Distinct raters: 3
+Serious votes: 2/3
+Recomputed y_primary: 1
+
+RATER-LEVEL VOTES
+------------------------------------------------------------------------
+rater4: serious_vote=1
+rater5: serious_vote=1
+rater6: serious_vote=0
+
+RAW MQM ANNOTATIONS
+------------------------------------------------------------------------
+rater4 | Accuracy/Mistranslation | Minor | serious_row=0 | vote=1
+  MQM target: Boccios Anwalt, Kenneth Lange, sagte, sein Mandant sei überzeugt, von dem Mitangeklagten Serge Nkorina, der aus Teneriffa, Spanien, ausgeliefert wird, an dem <v>Programm </v>teilzunehmen.
+rater4 | Style/Awkward | Minor | serious_row=0 | vote=1
+  MQM target: Boccios Anwalt, Kenneth Lange, sagte, sein Mandant sei überzeugt, von dem Mitangeklagten Serge Nkorina, der<v> aus Teneriffa, Spanien, </v>ausgeliefert wird, an dem Programm teilzunehmen.
+rater4 | Accuracy/Mistranslation | Major | serious_row=1 | vote=1
+  MQM target: Boccios Anwalt, Kenneth Lange, sagte, sein Mandant <v>sei überzeugt, von dem Mitangeklagten</v> Serge Nkorina, der aus Teneriffa, Spanien, ausgeliefert wird, an dem Programm teilzunehmen.
+rater5 | Non-translation! | Major | serious_row=1 | vote=1
+  MQM target: <v>Boccios Anwalt, Kenneth Lange, sagte, sein Mandant sei überzeugt, von dem Mitangeklagten Serge Nkorina, der aus Teneriffa, Spanien, ausgeliefert wird, an dem Programm teilzunehmen.</v>
+rater6 | Accuracy/Mistranslation | Minor | serious_row=0 | vote=0
+  MQM target: Boccios Anwalt, Kenneth Lange, sagte, sein Mandant sei überzeugt, von dem Mitangeklagten Serge Nkorina, der aus Teneriffa, Spanien, ausgeliefert wird, an dem <v>Programm</v> teilzunehmen.
+rater6 | Accuracy/Mistranslation | Minor | serious_row=0 | vote=0
+  MQM target: Boccios Anwalt, Kenneth Lange, sagte, sein Mandant sei <v>überzeugt</v>, von dem Mitangeklagten Serge Nkorina, der aus Teneriffa, Spanien, ausgeliefert wird, an dem Programm teilzunehmen.
+
+SOURCE / MAPPING / ORIGINAL TARGET
+------------------------------------------------------------------------
+MQM source variants within selected segment: 1
+MQM source text: Boccio's attorney, Kenneth Lange, said his client was convinced to take part in the scheme by co-defendant, Serge Nkorina, who's being extradited from Tenerife, Spain.
+Independent WMT source text file: NOT_FOUND_IN_PROJECT
+Official mapping line: 1316
+Original MT output file: original_outputs\newstest2020.en-de.Huoshan_Translate.832.txt
+Original MT target: Boccios Anwalt, Kenneth Lange, sagte, sein Mandant sei überzeugt, von dem Mitangeklagten Serge Nkorina, der aus Teneriffa, Spanien, ausgeliefert wird, an dem Programm teilzunehmen.
+Model-data target vs original MT target: EXACT_MATCH
+
+REVIEWER MARKUP AUDIT
+------------------------------------------------------------------------
+Raw MQM target rows containing <v>...</v> markers: 53671/61120
+Original MT output lines containing <v>...</v> markers: 0/1418
+Model input source rows containing markers: 0/9926
+Model input target rows containing markers: 0/9926
+Interpretation: MQM target span tags are annotation markup. Model input target is sourced from original_outputs; confirm by exact target match above.
+
+SOURCE FILE PROVENANCE
+------------------------------------------------------------------------
+Mapping SHA-256: 5364b05190e9914a361dee960fe8e376ca6762cce08a5d577a3ceee970146fa8
+Original MT output SHA-256: bb18314430b7c897dd9ec7c5ae542d5a73254799c9638af33eccde4dbb633b44
+Existing reports/source_file_manifest.csv records exact official-archive SHA-256 matches for the mapping and seven MT outputs; it does not list an independent English source-text file.
+
+GIT HISTORY (read-only)
+------------------------------------------------------------------------
+Data/label/source history:
+d11b99e | 2026-11-03 23:48:21 +0700 | Complete G1 audit evidence and G2 evaluation reports
+a810ff1 | 2026-10-28 16:47:59 +0700 | Refactor codebase: clean obsolete scripts and standardize dynamic project paths
+fbea822 | 2026-10-27 22:18:38 +0700 | Initial commit: Translation Quality Estimation project
+
+Split/Test/error-analysis history:
+142fa90 | 2026-10-29 00:00:12 +0700 | Update Week 10 audit artifacts, ablation & error analysis results, and documentation
+a810ff1 | 2026-10-28 16:47:59 +0700 | Refactor codebase: clean obsolete scripts and standardize dynamic project paths
+fbea822 | 2026-10-27 22:18:38 +0700 | Initial commit: Translation Quality Estimation project
+
+GIT STATUS SUMMARY (read-only)
+------------------------------------------------------------------------
+['?? .venv_audit/', '?? analysis/phase1_data_label_audit.py', '?? audit_review_bundle.txt', '?? python_files.txt', '?? reports/phase1_data_label_audit/']
+
+LIMITATIONS
+------------------------------------------------------------------------
+- This script does not modify source data, model data, splits, predictions, or model files.
+- Source consistency across MQM raters is not the same as independent verification against the official WMT English source corpus.
+- If independent source text is absent, obtain the official newstest2020 English source file and rerun this audit after placing it in the project.

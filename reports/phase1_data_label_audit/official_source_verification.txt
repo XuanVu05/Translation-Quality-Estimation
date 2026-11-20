@@ -1,0 +1,13 @@
+PHASE 1 - OFFICIAL SOURCE TEXT VERIFICATION
+=======================================================
+Mapping segments: 1418
+Official SGM segments extracted: 1418
+MQM unique document-segment groups: 1418
+Segments compared: 1418
+Exact normalized source matches: 954
+Source mismatches: 464
+Missing SGM source: 0
+Missing MQM source: 0
+Segments with multiple MQM source variants: 0
+
+Match rate: 67.28%

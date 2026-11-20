@@ -1,0 +1,6 @@
+category,serious_annotation_rows,affected_systems,unique_segments
+Accuracy/Mistranslation,366,7,151
+Non-translation!,19,7,16
+Accuracy/Omission,12,5,7
+Accuracy/Untranslated text,11,5,9
+Accuracy/Addition,6,2,3

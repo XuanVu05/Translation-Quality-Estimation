@@ -1,0 +1,21 @@
+﻿rater_combination,Huoshan_Translate.832,OPPO.1535,Online-A.1574,Online-B.1590,Tencent_Translation.1520,Tohoku-AIP-NTT.890,eTranslation.737
+"('rater1', 'rater2', 'rater3')",65,65,65,65,65,65,65
+"('rater1', 'rater2', 'rater4')",78,78,78,78,78,78,78
+"('rater1', 'rater2', 'rater5')",81,81,81,81,81,81,81
+"('rater1', 'rater2', 'rater6')",89,89,89,89,89,89,89
+"('rater1', 'rater3', 'rater4')",61,61,61,61,61,61,61
+"('rater1', 'rater3', 'rater5')",49,49,49,49,49,49,49
+"('rater1', 'rater3', 'rater6')",68,68,68,68,68,68,68
+"('rater1', 'rater4', 'rater5')",78,78,78,78,78,78,78
+"('rater1', 'rater4', 'rater6')",63,63,63,63,63,63,63
+"('rater1', 'rater5', 'rater6')",81,81,81,81,81,81,81
+"('rater2', 'rater3', 'rater4')",67,67,67,67,67,67,67
+"('rater2', 'rater3', 'rater5')",43,43,43,43,43,43,43
+"('rater2', 'rater3', 'rater6')",63,63,63,63,63,63,63
+"('rater2', 'rater4', 'rater5')",59,59,59,59,59,59,59
+"('rater2', 'rater4', 'rater6')",78,78,78,78,78,78,78
+"('rater2', 'rater5', 'rater6')",60,60,60,60,60,60,60
+"('rater3', 'rater4', 'rater5')",115,115,115,115,115,115,115
+"('rater3', 'rater4', 'rater6')",64,64,64,64,64,64,64
+"('rater3', 'rater5', 'rater6')",110,110,110,110,110,110,110
+"('rater4', 'rater5', 'rater6')",46,46,46,46,46,46,46

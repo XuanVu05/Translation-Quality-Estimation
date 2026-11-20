@@ -1,0 +1,21 @@
+﻿rater_combination,segments,percentage
+"('rater3', 'rater4', 'rater5')",805,8.11
+"('rater3', 'rater5', 'rater6')",770,7.76
+"('rater1', 'rater2', 'rater6')",623,6.28
+"('rater1', 'rater5', 'rater6')",567,5.71
+"('rater1', 'rater2', 'rater5')",567,5.71
+"('rater1', 'rater4', 'rater5')",546,5.5
+"('rater1', 'rater2', 'rater4')",546,5.5
+"('rater2', 'rater4', 'rater6')",546,5.5
+"('rater1', 'rater3', 'rater6')",476,4.8
+"('rater2', 'rater3', 'rater4')",469,4.72
+"('rater1', 'rater2', 'rater3')",455,4.58
+"('rater3', 'rater4', 'rater6')",448,4.51
+"('rater1', 'rater4', 'rater6')",441,4.44
+"('rater2', 'rater3', 'rater6')",441,4.44
+"('rater1', 'rater3', 'rater4')",427,4.3
+"('rater2', 'rater5', 'rater6')",420,4.23
+"('rater2', 'rater4', 'rater5')",413,4.16
+"('rater1', 'rater3', 'rater5')",343,3.46
+"('rater4', 'rater5', 'rater6')",322,3.24
+"('rater2', 'rater3', 'rater5')",301,3.03
