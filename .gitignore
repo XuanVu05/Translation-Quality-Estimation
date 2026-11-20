@@ -30,6 +30,7 @@ venv/
 ENV/
 env/
 .venv_mla/
+.venv_xlmr/
 
 # IDE and editors
 .idea/
