@@ -69,6 +69,7 @@ venv/
 audit_review_bundle.txt
 python_files.txt
 reports/python_source_files.txt
+Report/python_source_files.txt
 
 # Local audit and backup
 _PROJECT_AUDIT/

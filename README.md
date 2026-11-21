@@ -34,25 +34,33 @@ The exact license and redistribution conditions must be confirmed against the au
 
 ## 3. Project Structure
 
-- `mqm_newstest2020_ende.tsv`: Source MQM annotation data.
-- `data/`: Official segment and document alignment mapping, including `details/en-de.txt`.
-- `original_outputs/`: Raw MT system translation outputs.
-- `src/`: Dataset processing, splitting, baseline training, evaluation, and validation scripts.
-- `analysis/`: Data-quality and MQM error-analysis scripts.
-- `experiments/`: Sensitivity analysis and system-identity experiments.
-- `results/week10/`: Week 10 experimental outputs and audit artifacts.
-- `results/week11/`: Week 11 MQM error-analysis scripts, 10-case qualitative audits, and neighbor-segment inspection outputs.
+The project is structured into four main directories:
+
+- **`Data/`**: Input datasets and mapping files.
+  - `Data/raw/mqm_newstest2020_ende.tsv`: Source MQM annotation dataset.
+  - `Data/details/en-de.txt`: Official segment and document alignment mapping.
+  - `Data/official_wmt2020/`: Official WMT 2020 evaluation resources.
+  - `Data/original_outputs/`: Raw translation outputs from the 7 MT systems.
+- **`Code/`**: Source code and analysis pipelines.
+  - `Code/src/`: Core dataset processing, split freezing, baseline training, evaluation, and validation scripts.
+  - `Code/analysis/`: Data quality audits and MQM error-analysis scripts.
+  - `Code/experiments/`: Sensitivity analysis and system-identity experiments.
+  - `Code/config.py`: Central path configuration module.
+- **`Results/`**: Experimental artifacts, metrics, and models.
+  - `Results/week10/`: Week 10 experimental outputs, locked splits, and audit artifacts.
+  - `Results/week11/`: Week 11 MQM error-analysis, 10-case qualitative audits, and false-negative investigations.
+- **`Report/`**: Comprehensive audit reports and qualitative evidence documentation (Phase 1–5, G1–G3).
 
 Important result directories include:
 
-- `results/week10/locked_split/`: Split snapshot, document assignments, manifest, and QA report.
-- `results/week10/baseline_results/`: Development-set baseline results.
-- `results/week10/ablation_dev/`: Development-set feature ablation results.
-- `results/week10/test_evaluation/`: Test predictions, metrics, confidence intervals, and audit notes.
-- `results/week10/error_analysis_dev/`: Development-set error-analysis outputs.
-- `results/week10/model_data/`: Prepared train, development, and test data.
-- `results/week10/logs/`: Existing audit and data-quality logs.
-- `results/week11/error_analysis_dev/`: Week 11 Dev top-20% MQM audit, status summary, and 10-case deep-dive analyses.
+- `Results/week10/locked_split/`: Split snapshot, document assignments, manifest, and QA report.
+- `Results/week10/baseline_results/`: Development-set baseline results.
+- `Results/week10/ablation_dev/`: Development-set feature ablation results.
+- `Results/week10/test_evaluation/`: Test predictions, metrics, confidence intervals, and audit notes.
+- `Results/week10/error_analysis_dev/`: Development-set error-analysis outputs.
+- `Results/week10/model_data/`: Prepared train, development, and test data.
+- `Results/week10/logs/`: Existing audit and data-quality logs.
+- `Results/week11/error_analysis_dev/`: Week 11 Dev top-20% MQM audit, status summary, and 10-case deep-dive analyses.
 
 ## 4. Data Splitting and Reproducibility
 
