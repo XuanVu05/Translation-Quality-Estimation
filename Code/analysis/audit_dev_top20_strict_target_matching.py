@@ -3,7 +3,7 @@ import json
 import pandas as pd
 
 ROOT = Path(".")
-BASE = ROOT / "results/week10/error_analysis_dev"
+BASE = ROOT / "Results/week10/error_analysis_dev"
 
 INPUT = BASE / "dev_top20_zero_vote_annotations.csv"
 SEGMENT_OUT = BASE / "dev_top20_zero_vote_strict_segment_audit.csv"

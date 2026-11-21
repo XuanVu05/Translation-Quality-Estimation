@@ -2,8 +2,8 @@
 from pathlib import Path
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "analysis" / "data_quality_results"
+ROOT = Path(__file__).resolve().parents[2]
+OUT = ROOT / "Code" / "analysis" / "data_quality_results"
 
 comparison = pd.read_csv(
     OUT / "mqm_vs_original_all_segments.csv"

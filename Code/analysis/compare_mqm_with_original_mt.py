@@ -4,12 +4,12 @@ import re
 import json
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
-MQM_PATH = ROOT / "mqm_newstest2020_ende.tsv"
-MAPPING_PATH = ROOT / "data" / "details" / "en-de.txt"
-ORIGINAL_DIR = ROOT / "original_outputs"
-OUT = ROOT / "analysis" / "data_quality_results"
+MQM_PATH = ROOT / "Data" / "raw" / "mqm_newstest2020_ende.tsv"
+MAPPING_PATH = ROOT / "Data" / "details" / "en-de.txt"
+ORIGINAL_DIR = ROOT / "Data" / "original_outputs"
+OUT = ROOT / "Code" / "analysis" / "data_quality_results"
 OUT.mkdir(parents=True, exist_ok=True)
 
 SYSTEM_FILES = {

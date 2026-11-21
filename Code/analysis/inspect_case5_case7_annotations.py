@@ -2,8 +2,8 @@
 from pathlib import Path
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[1]
-MQM_PATH = ROOT / "mqm_newstest2020_ende.tsv"
+ROOT = Path(__file__).resolve().parents[2]
+MQM_PATH = ROOT / "Data" / "raw" / "mqm_newstest2020_ende.tsv"
 
 cases = [
     (1, "Online-B.1590", "abcnews.363994", 5, 1317),

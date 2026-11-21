@@ -2,13 +2,13 @@
 from pathlib import Path
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 INPUT = (
-    ROOT / "results" / "week10" / "error_analysis"
+    ROOT / "Results" / "week10" / "error_analysis"
     / "selected_cases_rater_annotations.csv"
 )
 OUT = (
-    ROOT / "results" / "week10" / "error_analysis"
+    ROOT / "Results" / "week10" / "error_analysis"
     / "manual_cases_summary.csv"
 )
 

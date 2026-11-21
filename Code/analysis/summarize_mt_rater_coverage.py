@@ -1,9 +1,9 @@
 from pathlib import Path
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parent.parent
-DATA = ROOT / "mqm_newstest2020_ende.tsv"
-OUT = ROOT / "results" / "week10" / "data_quality"
+ROOT = Path(__file__).resolve().parents[2]
+DATA = ROOT / "Data" / "raw" / "mqm_newstest2020_ende.tsv"
+OUT = ROOT / "Results" / "week10" / "data_quality"
 OUT.mkdir(parents=True, exist_ok=True)
 
 df = pd.read_csv(DATA, sep="\t", encoding="utf-8")

@@ -3,9 +3,9 @@ import pandas as pd
 from pathlib import Path
 from sklearn.model_selection import GroupShuffleSplit
 
-ROOT = Path(__file__).resolve().parent.parent
-DATA_PATH = ROOT / "results" / "week10" / "model_data" / "mt_segment_level_original_outputs.csv"
-OUT_DIR = ROOT / "results" / "week10" / "model_data"
+ROOT = Path(__file__).resolve().parents[2]
+DATA_PATH = ROOT / "Results" / "week10" / "model_data" / "mt_segment_level_original_outputs.csv"
+OUT_DIR = ROOT / "Results" / "week10" / "model_data"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 df = pd.read_csv(DATA_PATH, dtype={"doc": str, "system": str})

@@ -1,5 +1,5 @@
 {
-  "input": "results\\week10\\error_analysis_dev\\dev_top20_zero_vote_annotations.csv",
+  "input": "Results\\week10\\error_analysis_dev\\dev_top20_zero_vote_annotations.csv",
   "candidate_annotation_rows": 959,
   "target_matched_annotation_rows": 893,
   "target_unmatched_annotation_rows": 66,
@@ -18,7 +18,7 @@
   },
   "disagreement_definition": "A segment is marked as disagreement when at least one matched rater has a Minor/Major annotation and at least one matched rater has a No-error annotation.",
   "outputs": [
-    "results\\week10\\error_analysis_dev\\dev_top20_zero_vote_strict_segment_audit.csv",
-    "results\\week10\\error_analysis_dev\\dev_top20_zero_vote_strict_rater_audit.csv"
+    "Results\\week10\\error_analysis_dev\\dev_top20_zero_vote_strict_segment_audit.csv",
+    "Results\\week10\\error_analysis_dev\\dev_top20_zero_vote_strict_rater_audit.csv"
   ]
 }

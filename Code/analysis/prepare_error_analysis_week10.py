@@ -3,12 +3,12 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 INPUT = (
-    ROOT / "results" / "week10" / "test_evaluation"
+    ROOT / "Results" / "week10" / "test_evaluation"
     / "test_predictions.csv"
 )
-OUT_DIR = ROOT / "results" / "week10" / "error_analysis"
+OUT_DIR = ROOT / "Results" / "week10" / "error_analysis"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 df = pd.read_csv(INPUT)

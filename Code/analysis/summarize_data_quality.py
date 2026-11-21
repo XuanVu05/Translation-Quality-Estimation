@@ -10,12 +10,12 @@ import pandas as pd
 # 1. PROJECT PATHS AND CONFIGURATION
 # ============================================================
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 
-DATA = ROOT / "mqm_newstest2020_ende.tsv"
+DATA = ROOT / "Data" / "raw" / "mqm_newstest2020_ende.tsv"
 
-OUT = ROOT / "results" / "week10" / "data_quality"
-LOG = ROOT / "results" / "week10" / "logs"
+OUT = ROOT / "Results" / "week10" / "data_quality"
+LOG = ROOT / "Results" / "week10" / "logs"
 
 OUT.mkdir(parents=True, exist_ok=True)
 LOG.mkdir(parents=True, exist_ok=True)

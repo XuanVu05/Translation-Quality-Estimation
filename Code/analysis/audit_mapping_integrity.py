@@ -6,11 +6,11 @@ import pandas as pd
 # PATHS
 # ============================================================
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
-MQM_PATH = ROOT / "mqm_newstest2020_ende.tsv"
-MAPPING_PATH = ROOT / "data" / "details" / "en-de.txt"
-OUTPUT_DIR = ROOT / "results" / "week10" / "data_quality" / "mapping_integrity"
+MQM_PATH = ROOT / "Data" / "raw" / "mqm_newstest2020_ende.tsv"
+MAPPING_PATH = ROOT / "Data" / "details" / "en-de.txt"
+OUTPUT_DIR = ROOT / "Results" / "week10" / "data_quality" / "mapping_integrity"
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 

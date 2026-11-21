@@ -8,11 +8,11 @@ import pandas as pd
 # 1. PATHS
 # =========================================================
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
-MQM_PATH = ROOT / "mqm_newstest2020_ende.tsv"
+MQM_PATH = ROOT / "Data" / "raw" / "mqm_newstest2020_ende.tsv"
 
-ERROR_DIR = ROOT / "results" / "week10" / "error_analysis_dev"
+ERROR_DIR = ROOT / "Results" / "week10" / "error_analysis_dev"
 
 ZERO_SEGMENTS_PATH = (
     ERROR_DIR / "dev_top20_zero_vote_segments.csv"
@@ -22,7 +22,7 @@ ZERO_ANNOTATIONS_PATH = (
     ERROR_DIR / "dev_top20_zero_vote_annotations.csv"
 )
 
-OUT_DIR = ROOT / "results" / "week11" / "error_analysis_dev"
+OUT_DIR = ROOT / "Results" / "week11" / "error_analysis_dev"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Các hệ thống MT được sử dụng trong nghiên cứu

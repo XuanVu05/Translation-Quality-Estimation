@@ -3,13 +3,13 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 PRED_PATH = (
-    ROOT / "results" / "week10" / "error_analysis"
+    ROOT / "Results" / "week10" / "error_analysis"
     / "test_predictions_with_mqm.csv"
 )
-MQM_PATH = ROOT / "mqm_newstest2020_ende.tsv"
-OUT_DIR = ROOT / "results" / "week10" / "error_analysis"
+MQM_PATH = ROOT / "Data" / "raw" / "mqm_newstest2020_ende.tsv"
+OUT_DIR = ROOT / "Results" / "week10" / "error_analysis"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 pred = pd.read_csv(PRED_PATH)

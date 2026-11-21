@@ -6,10 +6,10 @@ import pandas as pd
 # 1. PATHS
 # =========================================================
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
 BASE_DIR = (
-    ROOT / "results" / "week11"
+    ROOT / "Results" / "week11"
     / "error_analysis_dev"
 )
 

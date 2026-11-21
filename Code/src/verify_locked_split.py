@@ -6,8 +6,8 @@ from pathlib import Path
 import pandas as pd
 
 
-ROOT = Path(__file__).resolve().parent.parent
-WEEK10 = ROOT / "results" / "week10"
+ROOT = Path(__file__).resolve().parents[2]
+WEEK10 = ROOT / "Results" / "week10"
 
 SOURCE_PATH = WEEK10 / "model_data" / "segments_with_fixed_splits.csv"
 SNAPSHOT_PATH = WEEK10 / "locked_split" / "segments_week10_90_20_20.csv"

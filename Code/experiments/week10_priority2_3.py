@@ -24,10 +24,10 @@ import pandas as pd
 from scipy.stats import spearmanr
 from sklearn.metrics import average_precision_score, precision_score, recall_score, matthews_corrcoef
 
-ROOT = Path(__file__).resolve().parent.parent
-MQM_PATH = ROOT / "mqm_newstest2020_ende.tsv"
-SPLIT_PATH = ROOT / "results" / "week10" / "model_data" / "segments_with_fixed_splits.csv"
-OUT = ROOT / "results" / "week10" / "priority2_3"
+ROOT = Path(__file__).resolve().parents[2]
+MQM_PATH = ROOT / "Data" / "raw" / "mqm_newstest2020_ende.tsv"
+SPLIT_PATH = ROOT / "Results" / "week10" / "model_data" / "segments_with_fixed_splits.csv"
+OUT = ROOT / "Results" / "week10" / "priority2_3"
 OUT.mkdir(parents=True, exist_ok=True)
 
 # If your saved XLM-R checkpoint is in a known location, set it here, e.g.
@@ -264,8 +264,8 @@ def run_xlmr_diagnostic(data):
         candidates = [
             ROOT / "models" / "xlmr_ced",
             ROOT / "models" / "xlm-roberta",
-            ROOT / "results" / "week9" / "xlmr_model",
-            ROOT / "results" / "week10" / "xlmr_model",
+            ROOT / "Results" / "week9" / "xlmr_model",
+            ROOT / "Results" / "week10" / "xlmr_model",
             ROOT / "xlmr_model",
         ]
         model_dir = next((p for p in candidates if p.exists() and (p / "config.json").exists()), None)

@@ -7,10 +7,10 @@ from datetime import datetime, timezone
 import pandas as pd
 
 ROOT = Path(".")
-DEV_PATH = ROOT / "results/week10/model_data/dev_segments.csv"
-PRED_PATH = ROOT / "results/week10/ablation_dev/dev_ablation_predictions.csv"
-MQM_PATH = ROOT / "mqm_newstest2020_ende.tsv"
-OUT_DIR = ROOT / "results/week10/error_analysis_dev"
+DEV_PATH = ROOT / "Results/week10/model_data/dev_segments.csv"
+PRED_PATH = ROOT / "Results/week10/ablation_dev/dev_ablation_predictions.csv"
+MQM_PATH = ROOT / "Data" / "raw" / "mqm_newstest2020_ende.tsv"
+OUT_DIR = ROOT / "Results/week10/error_analysis_dev"
 
 KEYS = ["system", "doc", "seg_id"]
 REQUIRED_DEV = KEYS + ["source", "target", "serious_votes", "y_primary"]

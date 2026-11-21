@@ -12,19 +12,19 @@ import pandas as pd
 # 1. PATHS AND CONFIGURATION
 # ============================================================
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
 SELECTED_PATH = (
-    ROOT / "results" / "week11" / "error_analysis_dev"
+    ROOT / "Results" / "week11" / "error_analysis_dev"
     / "dev_top20_error_analysis_10_cases.csv"
 )
 
-MQM_PATH = ROOT / "mqm_newstest2020_ende.tsv"
-MAPPING_PATH = ROOT / "data" / "details" / "en-de.txt"
-OUTPUT_DIR = ROOT / "original_outputs"
+MQM_PATH = ROOT / "Data" / "raw" / "mqm_newstest2020_ende.tsv"
+MAPPING_PATH = ROOT / "Data" / "details" / "en-de.txt"
+OUTPUT_DIR = ROOT / "Data" / "original_outputs"
 
 OUT = (
-    ROOT / "results" / "week11" / "error_analysis_dev"
+    ROOT / "Results" / "week11" / "error_analysis_dev"
     / "current_10_case_analysis"
 )
 

@@ -2,13 +2,13 @@
 from pathlib import Path
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 PRED_PATH = (
-    ROOT / "results" / "week10" / "test_evaluation"
+    ROOT / "Results" / "week10" / "test_evaluation"
     / "test_predictions.csv"
 )
-MQM_PATH = ROOT / "mqm_newstest2020_ende.tsv"
-OUT_DIR = ROOT / "results" / "week10" / "error_analysis"
+MQM_PATH = ROOT / "Data" / "raw" / "mqm_newstest2020_ende.tsv"
+OUT_DIR = ROOT / "Results" / "week10" / "error_analysis"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 KEYS = ["system", "doc", "doc_id", "seg_id"]

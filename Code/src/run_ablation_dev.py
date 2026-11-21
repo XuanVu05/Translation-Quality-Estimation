@@ -10,9 +10,9 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import average_precision_score, matthews_corrcoef
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 
-ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = ROOT / "results" / "week10" / "model_data"
-OUT_DIR = ROOT / "results" / "week10" / "ablation_dev"
+ROOT = Path(__file__).resolve().parents[2]
+DATA_DIR = ROOT / "Results" / "week10" / "model_data"
+OUT_DIR = ROOT / "Results" / "week10" / "ablation_dev"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 SEED = 42

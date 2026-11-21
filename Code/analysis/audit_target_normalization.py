@@ -4,10 +4,10 @@ import re
 import json
 import pandas as pd
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-MQM_PATH = PROJECT_ROOT / "mqm_newstest2020_ende.tsv"
-OUTPUT_DIR = PROJECT_ROOT / "analysis" / "data_quality_results"
+MQM_PATH = PROJECT_ROOT / "Data" / "raw" / "mqm_newstest2020_ende.tsv"
+OUTPUT_DIR = PROJECT_ROOT / "Code" / "analysis" / "data_quality_results"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 mqm = pd.read_csv(MQM_PATH, sep="\t")

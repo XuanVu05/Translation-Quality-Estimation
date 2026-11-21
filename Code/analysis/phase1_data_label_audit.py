@@ -2,11 +2,11 @@ from pathlib import Path
 import csv, hashlib, subprocess, sys
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[1]
-MQM = ROOT / 'mqm_newstest2020_ende.tsv'
-MAPPING = ROOT / 'data' / 'details' / 'en-de.txt'
-MODEL_DATA = ROOT / 'results' / 'week10' / 'model_data' / 'mt_segment_level_original_outputs.csv'
-OUT = ROOT / 'reports' / 'phase1_data_label_audit'
+ROOT = Path(__file__).resolve().parents[2]
+MQM = ROOT / 'Data' / 'raw' / 'mqm_newstest2020_ende.tsv'
+MAPPING = ROOT / 'Data' / 'details' / 'en-de.txt'
+MODEL_DATA = ROOT / 'Results' / 'week10' / 'model_data' / 'mt_segment_level_original_outputs.csv'
+OUT = ROOT / 'Report' / 'phase1_data_label_audit'
 OUT.mkdir(parents=True, exist_ok=True)
 
 KEYS = ['system', 'doc', 'doc_id', 'seg_id']
@@ -79,7 +79,7 @@ mr = mapping[(mapping.document_id == key['doc']) & (mapping.segment_id == key['d
 if len(mr) != 1:
     raise RuntimeError(f'Expected one mapping row for {key}, found {len(mr)}')
 line_no = int(mr.iloc[0]['line'])
-mt_file = ROOT / 'original_outputs' / f"newstest2020.en-de.{key['system']}.txt"
+mt_file = ROOT / 'Data' / 'original_outputs' / f"newstest2020.en-de.{key['system']}.txt"
 with mt_file.open('r', encoding='utf-8-sig') as f:
     mt_lines = [x.rstrip('\r\n') for x in f]
 if line_no < 1 or line_no > len(mt_lines):

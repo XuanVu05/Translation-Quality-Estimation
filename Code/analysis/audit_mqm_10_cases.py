@@ -12,9 +12,9 @@ import pandas as pd
 
 # File hiện tại nằm trong analysis/
 # parents[1] chính là thư mục gốc Translation-Quality-Estimation/
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-MQM_PATH = PROJECT_ROOT / "mqm_newstest2020_ende.tsv"
+MQM_PATH = PROJECT_ROOT / "Data" / "raw" / "mqm_newstest2020_ende.tsv"
 
 OUTPUT_DIR = (
     PROJECT_ROOT

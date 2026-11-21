@@ -3,9 +3,9 @@ from pathlib import Path
 import re
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[1]
-MQM_PATH = ROOT / "mqm_newstest2020_ende.tsv"
-OUT = ROOT / "analysis" / "data_quality_results"
+ROOT = Path(__file__).resolve().parents[2]
+MQM_PATH = ROOT / "Data" / "raw" / "mqm_newstest2020_ende.tsv"
+OUT = ROOT / "Code" / "analysis" / "data_quality_results"
 OUT.mkdir(parents=True, exist_ok=True)
 
 df = pd.read_csv(MQM_PATH, sep="\t")

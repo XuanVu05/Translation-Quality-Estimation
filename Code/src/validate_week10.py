@@ -2,8 +2,8 @@
 import pandas as pd
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = ROOT / "results" / "week10" / "model_data"
+ROOT = Path(__file__).resolve().parents[2]
+DATA_DIR = ROOT / "Results" / "week10" / "model_data"
 
 FILES = {
     "train": DATA_DIR / "train_segments.csv",

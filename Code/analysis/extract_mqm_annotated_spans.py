@@ -3,10 +3,10 @@ from pathlib import Path
 import pandas as pd
 import re
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
 INPUT = (
-    ROOT / "results" / "week11"
+    ROOT / "Results" / "week11"
     / "error_analysis_dev"
     / "final_10_case_analysis"
     / "dev_10_case_raw_annotations.csv"

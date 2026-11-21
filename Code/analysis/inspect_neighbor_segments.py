@@ -6,10 +6,10 @@ import pandas as pd
 # 1. PATHS
 # =========================================================
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
-MQM_PATH = ROOT / "mqm_newstest2020_ende.tsv"
-MAPPING_PATH = ROOT / "data" / "details" / "en-de.txt"
+MQM_PATH = ROOT / "Data" / "raw" / "mqm_newstest2020_ende.tsv"
+MAPPING_PATH = ROOT / "Data" / "details" / "en-de.txt"
 OUTPUT_DIR = (
     ROOT
     / "results"
@@ -119,7 +119,7 @@ for case_no, system, document, local_seg, global_id in CASES:
             source = source_values[0] if len(source_values) else ""
 
         # Retrieve original MT target
-        output_path = ROOT / "original_outputs" / (
+        output_path = ROOT / "Data" / "original_outputs" / (
             f"newstest2020.en-de.{system}.txt"
         )
 

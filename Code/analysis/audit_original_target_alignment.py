@@ -7,14 +7,14 @@ import pandas as pd
 # 1. PATHS AND CONFIGURATION
 # ============================================================
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
-MQM_PATH = ROOT / "mqm_newstest2020_ende.tsv"
-MAPPING_PATH = ROOT / "data" / "details" / "en-de.txt"
-ORIGINAL_OUTPUT_DIR = ROOT / "original_outputs"
+MQM_PATH = ROOT / "Data" / "raw" / "mqm_newstest2020_ende.tsv"
+MAPPING_PATH = ROOT / "Data" / "details" / "en-de.txt"
+ORIGINAL_OUTPUT_DIR = ROOT / "Data" / "original_outputs"
 
 OUTPUT_DIR = (
-    ROOT / "results"
+    ROOT / "Results"
     / "week10"
     / "data_quality"
     / "target_alignment"

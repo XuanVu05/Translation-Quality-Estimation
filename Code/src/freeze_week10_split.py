@@ -6,14 +6,14 @@ from datetime import datetime, timezone
 
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 
 SOURCE = (
-    ROOT / "results" / "week10" / "model_data"
+    ROOT / "Results" / "week10" / "model_data"
     / "segments_with_fixed_splits.csv"
 )
 
-OUT_DIR = ROOT / "results" / "week10" / "locked_split"
+OUT_DIR = ROOT / "Results" / "week10" / "locked_split"
 
 EXPECTED = {
     "train": {"rows": 6797, "docs": 90, "positive": 803},

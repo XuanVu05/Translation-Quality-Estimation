@@ -1,12 +1,12 @@
 import pandas as pd
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-MQM_PATH = ROOT / "mqm_newstest2020_ende.tsv"
-DETAILS_PATH = ROOT / "data" / "details" / "en-de.txt"
-OUTPUT_DIR = ROOT / "original_outputs"
-RESULT_DIR = ROOT / "results" / "week10" / "model_data"
-AUDIT_DIR = ROOT / "results" / "week10" / "data_quality"
+ROOT = Path(__file__).resolve().parents[2]
+MQM_PATH = ROOT / "Data" / "raw" / "mqm_newstest2020_ende.tsv"
+DETAILS_PATH = ROOT / "Data" / "details" / "en-de.txt"
+OUTPUT_DIR = ROOT / "Data" / "original_outputs"
+RESULT_DIR = ROOT / "Results" / "week10" / "model_data"
+AUDIT_DIR = ROOT / "Results" / "week10" / "data_quality"
 
 SYSTEMS = {
     "eTranslation.737",

@@ -6,18 +6,18 @@ import pandas as pd
 # 1. PATHS
 # =========================================================
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
 DEV_PATH = (
-    ROOT / "results" / "week11"
+    ROOT / "Results" / "week11"
     / "error_analysis_dev"
     / "dev_top20_error_analysis.csv"
 )
 
-MQM_PATH = ROOT / "mqm_newstest2020_ende.tsv"
+MQM_PATH = ROOT / "Data" / "raw" / "mqm_newstest2020_ende.tsv"
 
 OUTPUT_DIR = (
-    ROOT / "results" / "week11"
+    ROOT / "Results" / "week11"
     / "error_analysis_dev"
     / "final_10_case_analysis"
 )
