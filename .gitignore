@@ -78,11 +78,7 @@ project_code_audit.zip
 # Audit virtual environment
 .venv_audit/
 
-# Model checkpoints and large weights (>100MB)
-Results/XLM-R/
-checkpoints/
-checkpoint-*/
+# Large model weights (>100MB, stored on Google Drive / Hugging Face)
 *.safetensors
-*.bin
-*.pt
-*.pth
+optimizer.pt
+pytorch_model.bin
